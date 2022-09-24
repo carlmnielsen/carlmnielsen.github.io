@@ -5,68 +5,170 @@ Background: #EAE7DE
 Font black: #0C243C
 */
 
+:root {
+    background: #F5F3EB;
+    font-size: 10px;
+    font-family: 'Roboto' , sans-serif;
+
+    --font-ratio: 1.33;
+    --size-300: calc(var(--size-400) / var(--font-ratio));
+    --size-400: 1.6rem;
+    /* 16px */
+    --size-500: calc(var(--size-400) * var(--font-ratio));
+    --size-600: calc(var(--size-500) * var(--font-ratio));
+    --size-700: calc(var(--size-600) * var(--font-ratio));
+    --size-800: calc(var(--size-700) * var(--font-ratio));
+    --size-900: calc(var(--size-800) * var(--font-ratio));
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 
 /*------------------------------ HEADER NAV------------------------------*/
 
-.header {
-    overflow: hidden;
-    background-color: #fff;
-    padding: 20px 10px;
+nav {
+    display: flex;
+    align-items: center;
 }
 
-/* Style the header links */
-.header a {
-    float: left;
-    color: black;
+.logo img {
+    max-width: 60px;
+    margin: 24px 0 0 19px;
+}
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #FF7B01;
+    /* background: linear-gradient(-135deg, #ff3c00, #ff9100); */
+    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+    /* clip-path: circle(25px at calc(0% + 45px) 45px); */
+    clip-path: circle(25px at calc(100% - 45px) 45px);
+    transition: all 0.3s ease-in-out;
+}
+
+#active:checked~.wrapper {
+    clip-path: circle(75%);
+}
+
+.menu-btn {
+    position: absolute;
+    z-index: 2;
+    right: 19px;
+    /* left: 20px; */
+    top: 19px;
+    height: 52px;
+    width: 52px;
     text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-}
-  
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-}
-  
-/* Change the background color on mouse-over */
-.header a:hover {
-    background-color: #ddd;
-    color: black;
+    line-height: 52px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #FF7B01;
+    cursor: pointer;
+    background: #fff;
+    /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+    transition: all 0.3s ease-in-out;
 }
 
-/* Style the active/current link*/
-.header a.active {
-    background-color: dodgerblue;
-    color: white;
+#active:checked~.menu-btn {
+    background: #fff;
+    color: #FF7B01;
 }
-  
-/* Float the link section to the right */
-.header-right {
-    float: right;
+
+#active:checked~.menu-btn i:before {
+    content: "\f00d";
 }
-  
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    
-    .header-right {
-      float: none;
-    }
+
+.wrapper ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
 }
+
+.wrapper ul li {
+    margin: 15px 0;
+}
+
+.wrapper ul li a {
+    color: none;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px 30px;
+    color: #fff;
+    position: relative;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+
+.wrapper ul li a:after {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    border-radius: 50px;
+    transform: scaleY(0);
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.wrapper ul li a:hover:after {
+    transform: scaleY(1);
+}
+
+.wrapper ul li a:hover {
+    color: #d04190;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
 
 
 /*------------------------------ BODY ------------------------------*/
+p {
+    font-size: var(--size-400);
+}
 
+label {
+    font-size: var(--size-300);
+}
 
+h1 {
+    font-size: var(--size-700);
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-size: var(--size-600);
+    font-family: 'Playfair Display', serif;
+}
+
+h3 {
+    font-size: var(--size-500);
+    font-family: 'Playfair Display', serif;
+}
+
+.intro {
+    text-align: center;
+    margin-top: 40px;
+}
 
 
 /*------------------------------ FOOTER ------------------------------*/

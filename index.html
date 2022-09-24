@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./portfoliowebsitestyles.css" />
+    <link rel="stylesheet" href="./style.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
+    <script src="https://kit.fontawesome.com/087cb42062.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
 </head>
 <body>
-    <header>
+    <nav>
         <div class="logo">
             <a href="./index.html">
                 <img src="./assets/CN logo-red-nobckgrd-2.png" alt="Carl Nielsen monogram" />
             </a>
         </div>
-
-        <div class="headernav">
-            <ul>
-                <li>
-                    <a href="">work</a>
-                </li>
-                <li>
-                    <a href="./about.html">about me</a>
-                </li>
-            </ul>
+        <div class="fullscreen-nav">
+            <input type="checkbox" id="active">
+            <label for="active" class="menu-btn"><i class="fa-solid fa-bars"></i></label>
+            <div class="wrapper">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <div class="content-body">
-
-        <div class="homepage-intro">
+    <div class="content">
+        <div class="intro">
             <h1>I create fresh and thoughtful, designs to make life a little more delightful</h1>
         </div>
 
@@ -38,46 +44,3 @@
         </div>
 
         <div class="case-studies">
-
-            <div class="study">
-                <a href="./assets/00000PORTRAIT_00000_BURST20200312152750276.jpg" title="View the Chidori case study">
-                    <div class="thumb">
-                        <span class="img">
-                            <img src="./assets/00000PORTRAIT_00000_BURST20200312152750276.jpg" alt="The Chidori timber stool next to a fiddle leaf fig">
-                        </span>
-                    </div>
-                    <div class="description">
-                        <p class="title">Japanese inspired timber stool</p>
-                        <p>Chidori, a simple yet complex design explores Japan’s intrinsic connection to timber through the use of the ‘chidori’ as
-                        the fundamental joint.</p>
-                        <p class="link">View</p>
-                    </div>
-                </a>
-            </div>
-
-        </div>  
-
-    </div>
-
-    <footer>
-         <div class="footernav">
-            <ul>
-                <li><img src="./assets/CN logo-red-nobckgrd-2.png" alt="Car Nielsen Monogram. The letter 'c' combined with the letter 'n'">
-                </li>
-                <li><p>Carl Nielsen</p><br>@ 2022</li>
-            </ul>
-            <ul>
-                <li><p>More</p></li>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about">About</a></li>
-                <li><a href="">Email</a></li>
-            </ul>
-            <ul>
-                <li><p>Work</p></li>
-                <li><a href="">Chidori</a></li>
-                <li><a href="">Moast</a></li>
-                <li><a href="">KH Careers Page</a></li>
-                <li><a href="">KH Commercial</a></li>
-            </ul>
-        </div>
-    </footer>
