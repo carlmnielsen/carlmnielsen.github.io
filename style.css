@@ -20,6 +20,7 @@ Font black: #0C243C
     --size-800: calc(var(--size-700) * var(--font-ratio));
     --size-900: calc(var(--size-800) * var(--font-ratio));
 
+    --white: #fff;
     --orange: #ff7b00;
     --faun: #ebe7da;
     --notBlack: #202020;
@@ -63,6 +64,44 @@ h4 {
 h5 {
     font-size: var(--size-300);
     font-family: 'Playfair Display', serif;
+}
+
+/*------------BUTTONS------------*/
+
+a.button-1 {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid var(--orange);
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: var(--size-400);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--orange);
+    text-align: center;
+    transition: all 0.2s;
+}
+
+a.button-1:hover {
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+.bouncy {
+    animation: bouncy 5s infinite linear;
+    position: relative;
+}
+
+@keyframes bouncy {
+    0% {top: 0em}
+    40% {top: 0em}
+    43% {top: -0.9em}
+    46% {top: 0em}
+    48% {top: -0.4em}
+    50% {top: 0em}
+    100% {top: 0em;}
 }
 
 /*------------HEADER NAV------------*/
@@ -153,6 +192,18 @@ nav ul li a:hover {
 
 .container .description {
     margin: 0 40px;
+}
+
+.sub-heading {
+    margin: 40px 0;
+}
+
+.latest-work .description h3 {
+    margin-bottom: 20px;
+}
+
+.latest-work .description p {
+    margin-bottom: 30px;
 }
 
 
