@@ -69,6 +69,16 @@ h5 {
 /*------------BUTTONS------------*/
 
 a.button-1 {
+    color: var(--notBlack);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+a.button-1:hover {
+    color: var(--orange);
+}
+
+a.button-2 {
     display: inline-block;
     padding: 0.35em 1.2em;
     border: 0.1em solid var(--orange);
@@ -84,7 +94,7 @@ a.button-1 {
     transition: all 0.2s;
 }
 
-a.button-1:hover {
+a.button-2:hover {
     color: var(--white);
     background-color: var(--orange);
 }
@@ -164,7 +174,7 @@ nav ul li a:hover {
 .intro h1 {
     margin: 0 auto;
     display: block;
-    max-width: 600px;
+    max-width: 800px;
     line-height: 62px;
     padding: 20px 25px 50px;
 }
