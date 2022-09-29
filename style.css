@@ -35,6 +35,7 @@ Font black: #0C243C
 
 p {
     font-size: var(--size-400);
+    line-height: 1.6em;
 }
 
 label {
@@ -71,6 +72,7 @@ h5 {
 a.button-1 {
     color: var(--notBlack);
     text-decoration: none;
+    border-bottom: 0.12em solid var(--notBlack);
     transition: all 0.2s;
 }
 
@@ -81,7 +83,7 @@ a.button-1:hover {
 a.button-2 {
     display: inline-block;
     padding: 0.35em 1.2em;
-    border: 0.1em solid var(--orange);
+    border: 0.14em solid var(--orange);
     margin: 0 0.3em 0.3em 0;
     border-radius: 0.12em;
     box-sizing: border-box;
@@ -97,11 +99,6 @@ a.button-2 {
 a.button-2:hover {
     color: var(--white);
     background-color: var(--orange);
-}
-
-.bouncy {
-    animation: bouncy 5s infinite linear;
-    position: relative;
 }
 
 @keyframes bouncy {
@@ -192,7 +189,6 @@ nav ul li a:hover {
     height: auto;
     padding: 2em;
     margin-bottom: 60px;
-    background: #e0e0e0;
 }
 
 .container img{
