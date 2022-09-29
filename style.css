@@ -212,6 +212,15 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
+.profile {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.profile img {
+    max-width: 600px;
+}
 
 /*------------FOOTER------------*/
 
