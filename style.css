@@ -6,7 +6,7 @@ Font black: #0C243C
 */
 
 :root {
-    background: #ebe7da;
+    background: var(--faun);
     font-size: 10px;
     font-family: 'Roboto' , sans-serif;
 
@@ -21,10 +21,10 @@ Font black: #0C243C
     --size-900: calc(var(--size-800) * var(--font-ratio));
 
     --white: #fff;
-    --orange: #ff7b00;
-    --faun: #ebe7da;
+    --orange: #FF8300;
+    --lightfaun: #f8f7f5;
+    --faun: #F5F3EB;
     --notBlack: #202020;
-
 }
 
 * {
@@ -59,7 +59,8 @@ h3 {
 
 h4 {
     font-size: var(--size-400);
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sanserif;
+    text-transform: uppercase
 }
 
 h5 {
@@ -84,7 +85,7 @@ a.button-2 {
     padding: 0.35em 1.2em;
     border: 0.14em solid var(--orange);
     margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
+    border-radius: 4px;
     box-sizing: border-box;
     text-decoration: none;
     font-size: var(--size-400);
@@ -119,7 +120,7 @@ header {
 
 .navbar {
     margin: 120px auto 0;
-    width: 800px;
+    width: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -150,6 +151,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: var(--orange);
+    transition: all 0.15s;
 }
 
 
@@ -164,7 +166,7 @@ nav ul li a:hover {
 
 .content section {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 900px;
 }
 
 .intro h1 {
@@ -193,10 +195,11 @@ nav ul li a:hover {
 .container img{
     max-width: 500px;
     height: auto;
+    border-radius: 6px;
 }
 
-.container .description {
-    margin: 0 40px;
+.description {
+    margin: 0 40px 20px 40px;
 }
 
 .sub-heading {
@@ -214,13 +217,38 @@ nav ul li a:hover {
 .profile {
     display: flex;
     align-items: center;
-    margin: 0 auto;
 }
 
 .profile img {
     max-width: 600px;
+    margin: 0 auto;
+    border-radius: 6px;
 }
 
+.emojis {
+    margin: 40px 0 20px 0;
+}
+
+.emojis p {
+    font-size: var(--size-700);
+    text-align: center;
+    letter-spacing: 20px;
+}
+
+.bio p {
+    margin: 40px 0 20px 0;
+}
+
+.callout {
+    margin: 80px 0 40px 0;
+    background: var(--white);
+    padding: 40px 100px;
+    border-radius: 6px;
+}
+
+.callout p{
+    margin: 20px 0;
+}
 /*------------FOOTER------------*/
 
 .footer {
