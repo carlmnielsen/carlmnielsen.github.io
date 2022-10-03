@@ -172,6 +172,7 @@ nav ul li a:hover {
 .intro h1 {
     margin: 0 auto;
     display: block;
+    width: 100%;
     max-width: 800px;
     line-height: 62px;
     padding: 20px 25px 50px;
@@ -185,11 +186,15 @@ nav ul li a:hover {
 }
 .container {
     display: flex;
+    flex-direction: row;
     align-items: center;
     max-width: 100%;
     height: auto;
-    padding: 2em;
     margin-bottom: 60px;
+}
+
+.container.right {
+    flex-direction: row-reverse;
 }
 
 .container img{
@@ -199,7 +204,11 @@ nav ul li a:hover {
 }
 
 .description {
-    margin: 0 40px 20px 40px;
+    margin: 0 0 20px 40px;
+}
+
+.description.right{
+    margin: 0 40px 20px 0;
 }
 
 .sub-heading {
