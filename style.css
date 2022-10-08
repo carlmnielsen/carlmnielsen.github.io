@@ -63,6 +63,10 @@ h4 {
     text-transform: uppercase
 }
 
+.callout h4 {
+    color: var(--orange);
+}
+
 h5 {
     font-size: var(--size-300);
     font-family: 'Playfair Display', serif;
@@ -245,11 +249,11 @@ nav ul li a:hover {
 }
 
 .bio p {
-    margin: 40px 0 20px 0;
+    margin: 40px 0 80px 0;
 }
 
 .callout {
-    margin: 80px 0 40px 0;
+    margin-bottom: 40px;
     background: var(--white);
     padding: 40px 100px;
     border-radius: 6px;
@@ -258,6 +262,26 @@ nav ul li a:hover {
 .callout p{
     margin: 20px 0;
 }
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tools img {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.tools p {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
 /*------------FOOTER------------*/
 
 .footer {
