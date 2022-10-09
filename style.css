@@ -38,6 +38,11 @@ p {
     line-height: 1.6em;
 }
 
+li {
+    font-size: var(--size-400);
+    line-height: 1.6em;
+}
+
 label {
     font-size: var(--size-300);
 }
@@ -50,6 +55,7 @@ h1 {
 h2 {
     font-size: var(--size-600);
     font-family: 'Playfair Display', serif;
+    margin-bottom: 50px;
 }
 
 h3 {
@@ -71,6 +77,11 @@ h5 {
     font-size: var(--size-300);
     font-family: 'Playfair Display', serif;
 }
+
+.break {
+    margin-bottom: 80px;
+}
+
 
 /*------------BUTTONS------------*/
 
@@ -248,12 +259,8 @@ nav ul li a:hover {
     letter-spacing: 20px;
 }
 
-.para p {
-    margin: 40px 0 80px 0;
-}
-
 .callout {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     background: var(--white);
     padding: 40px 100px;
     border-radius: 6px;
@@ -263,24 +270,31 @@ nav ul li a:hover {
     margin: 20px 0;
 }
 
-.tools {
+.para {
+    margin-bottom: 80px;
+}
+
+.para p {
+    margin-bottom: 20px;
+}
+
+.para ul {
+    padding-left: 40px;
+    margin-bottom: 80px;
+}
+
+.medium img {
     display: flex;
-    flex-direction: column;
     align-items: center;
-}
-
-.tools img {
-    max-width: 600px;
     margin: 0 auto;
-    border-radius: 6px;
+    max-width: 100%;
 }
 
-.tools p {
-    display: flex;
-    flex-direction: row;
-    
-}
 
+
+.shadow {
+    box-shadow: 5px 10px #202020;
+}
 
 /*------------FOOTER------------*/
 
@@ -289,8 +303,6 @@ nav ul li a:hover {
     display: block;
     color: aquamarine;
 }
-
-
 
 @media screen and (max-width: 500px) {
 
