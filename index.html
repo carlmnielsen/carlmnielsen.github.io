@@ -6,28 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
-    <script src="https://kit.fontawesome.com/087cb42062.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     </style>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
 </head>
 
 <body>
     <header>
-    <div class="navbar">
         <div class="logo">
-            <a href="./index.html">
-                <img src="./assets/CN logo-red-nobckgrd-2.png" alt="Carl Nielsen monogram" />
-            </a>
+            <a href="./index.html"><img src="./assets/CN logo-red-nobckgrd-2.png" alt=""></a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Work</a></li>
-                <li><a href="./about-me.html">About me</a></li>
-            </ul>
-        </nav>
-    </div>
+        <div class="navbar">
+            <div class="dropdown" style="float: left;">
+                <button class="dropbtn">Work</button>
+                <div class="dropdown-content">
+                    <a href="./kh-careers.html">Kennards Hire Careers Page</a>
+                    <a href="./moast.html">Moast</a>
+                    <a href="./chidori.html">Chidori</a>
+                    <a href="./easytrak.html">EasyTrak</a>
+                    <a href="#">Contact Re-engagement</a>
+                </div>
+            </div>
+            <a href="./about-me.html">About Me</a>
+        </div>
     </header>
 
     <div class="content">
@@ -35,7 +41,7 @@
     <section>
 
         <div class="intro">
-            <h1>I create fresh and thoughtful, designs to make life a little more <a href="" class="button-1">delightful</a></h1>
+            <h1>I create fresh and thoughtful, designs to make life a little more delightful</h1>
         </div>
 
         <div class="sub-heading">
@@ -49,7 +55,7 @@
                     <img src="./assets/original/kh-careers.png" alt="stool">
                 </div>
                 <div class="description">
-                    <h3>Chidori stool</h3>
+                    <h3>Kennards Hire Careers Page</h3>
                     <p>
                         A redesign and restructure of the Kennards Hire website. An opportunity where users can make an accurate and informed decision about their own fit ath the company.
                     </p>
@@ -62,8 +68,10 @@
                     <img src="./assets/original/chidori.png" alt="stool">
                 </div>
                 <div class="description">
-                    <h3>Chidori stool</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget cursus nulla. Nunc semper, orci non iaculis facilisis, massa neque mollis lorem, at semper diam augue id sem. Suspendisse potenti.</p>
+                    <h3>Easytrak</h3>
+                    <p>
+                        Landing page for a EasyTrak, a Kennards Hire product that is targeted towards complex trade customers who are most of the time on site and across multiple projects.
+                    </p>
                     <a href="./about-me.html" class="button-2">View</a>
                 </div>
             </div>
@@ -74,7 +82,9 @@
                 </div>
                 <div class="description">
                     <h3>Chidori stool</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget cursus nulla. Nunc semper, orci non iaculis facilisis, massa neque mollis lorem, at semper diam augue id sem. Suspendisse potenti.</p>
+                    <p>
+                        Chidori, a simple yet complex design explores Japan’s intrinsic connection to timber through the use of the ‘chidori’ as the fundamental joint.
+                    </p>
                     <a href="./about-me.html" class="button-2">View</a>
                 </div>
             </div>
@@ -82,5 +92,23 @@
         </div>
 
     </section>
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (e) {
+        if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+            }
+        }
+    }
+</script>
 
 </body>
