@@ -288,9 +288,8 @@ nav ul li a:hover {
     align-items: center;
     margin: 0 auto;
     max-width: 100%;
+    border-radius: 6px;
 }
-
-
 
 .shadow {
     box-shadow: 5px 10px #202020;
