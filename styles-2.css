@@ -1,4 +1,12 @@
 /* variables */
+:root {
+    --white: #fff;
+    --orange: #FF8300;
+    --lightfaun: #f8f7f5;
+    --faun: #F5F3EB;
+    --notBlack: #202020;
+}
+
 
 /* reset */
 
