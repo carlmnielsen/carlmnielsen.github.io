@@ -8,6 +8,8 @@
     --lightfaun: #f8f7f5;
     --faun: #F5F3EB;
     --notBlack: #202020;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 16px;
 }
 
 
@@ -38,8 +40,8 @@ body {
     color: var(--white);
     background-color: var(--orange);
 }
-img {
-    width: 60px;
+.navbar img {
+    width: 50px;
 }
 
 /* fonts */
@@ -70,7 +72,7 @@ img {
 
 .navbar {
   width: 100%;
-  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+  box-shadow: 0 4px 10px rgba(88, 75, 54, 0.15);
 }
 
 .nav-container {
