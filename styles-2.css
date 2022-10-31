@@ -8,8 +8,6 @@
     --lightfaun: #f8f7f5;
     --faun: #F5F3EB;
     --notBlack: #202020;
-    font-family: 'Roboto' , sans-serif;
-    font-size: 16px;
 }
 
 
@@ -27,6 +25,8 @@ li {
 
 body {
     background: var(--faun);
+    font-family: 'Roboto' , sans-serif;
+    font-size: 16px;
 }
 .button {
     display: inline-flex;
@@ -45,8 +45,54 @@ body {
 }
 
 /* fonts */
+h1,h2,h3,h4,h5 {
+    color: var(--notBlack);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+p,a,li {
+    color: var(--notBlack);
+}
+
+p {
+    margin: 30px;
+}
+
+h1 {
+    font-size: 1.5em; /* 24px --> 24 ÷ 16 = 1.5 */
+    line-height: 1em; /* 24px --> 24 ÷ 24 = 1 */
+}
+
+h2 {
+    font-size: 1.375em; /* 22px --> 22 ÷ 16 = 1.375 */
+    line-height: 1.0909em; /* 24px --> 24 ÷ 22 = 1.090909(09) */
+}
+
+h3 {
+    font-size: 1.25em; /* 20px --> 20 ÷ 16 = 1.25 */
+    line-height: 1.2em; /* 24px --> 24 ÷ 20 = 1.2 */
+}
+
+h4 {
+    font-size: 1.125em; /* 18px --> 18 ÷ 16 = 1.125 */
+    line-height: 1.333em; /* 24px --> 24 ÷ 18 = 1.3333333(3) */
+}
+
+h5, h6 {
+    font-size: 1em; /* 16px --> 16 ÷ 16 = 1 */
+    line-height: 1.5em; /* 24px --> 24 ÷ 16 = 1.5 */
+}
 
 /* mobile styles */
+section {
+    margin: 0 20px;
+}
+
+section img {
+    width: 100%;
+}
+
 
 /* small tablet styles */
 @media screen and (min-width: 600px) {
