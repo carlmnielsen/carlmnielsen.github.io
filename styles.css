@@ -157,17 +157,19 @@ section img {
     padding: 40px 10% 40px 10%;
 }
 
+.projects a {
+    font-size: 1.25em;
+    line-height: 1.2em;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.projects p {
+    margin: 20px 0;
+}
+
 .projects li {
-    margin-bottom: 30px;
-}
-
-.projects h3 {
-    text-decoration: underline 2px var(--orange);
-    text-underline-offset: 5px;
-}
-
-.projects a:hover {
-    text-underline-offset: 5px;
+    margin-bottom: 40px;
 }
 
 .contact {
@@ -222,7 +224,32 @@ section img {
 }
 /* desktop styles */
 @media screen and (min-width: 1200px) {
-    
+    nav {
+        margin: 60px auto 0;
+        max-width: 900px
+    }
+
+    .welcome {
+        width: 800px;
+    }
+
+    .latest-work {
+        width: 800px;
+    }
 }
 
 /* hamburger menu */
+
+
+/*__________________copy hover__________________*/
+
+.highlight {
+    background-image: linear-gradient(to right, transparent 50%, rgb(255, 238, 0, 0.5) 50%);
+    background-size: 200%;
+    transition: background-position 0.3s;
+}
+
+.highlight:hover {
+    background-position: -100%;
+    cursor: pointer;
+} 
