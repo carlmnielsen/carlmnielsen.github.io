@@ -172,23 +172,42 @@ section img {
     margin-bottom: 40px;
 }
 
-.contact {
+.callout {
     background: var(--white);
     border: none;
     border-radius: 4px;
-    padding: 30px 0 60px;
-    margin-bottom: 120px;
+    padding: 30px 0 40px;
+    margin-bottom: 100px;
     margin-top: 60px;
 }
 
-.email {
+.callout-content {
     padding: 0 10%;
 }
 
-.email p {
+.callout-content p {
     margin-bottom: 20px;
 }
 
+.details {
+    margin-bottom: 120px;
+}
+
+.details .description {
+    margin-bottom: 60px;
+}
+
+.step {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.step img{
+    width: 60px;
+    margin-right: 30px;
+}
 
 
 
@@ -246,10 +265,43 @@ section img {
 .highlight {
     background-image: linear-gradient(to right, transparent 50%, rgb(255, 238, 0, 0.5) 50%);
     background-size: 200%;
-    transition: background-position 0.3s;
+    transition: background-position 0.2s;
 }
 
 .highlight:hover {
     background-position: -100%;
     cursor: pointer;
-} 
+}
+
+.highlight-2 {
+    background-image: linear-gradient(to right, transparent 50%, rgba(115, 255, 0, 0.3) 50%);
+    background-size: 200%;
+    transition: background-position 0.2s;
+}
+
+.highlight-2:hover {
+    background-position: -100%;
+    cursor: pointer;
+}
+
+.highlight-3 {
+    background-image: linear-gradient(to right, transparent 50%, rgba(255, 123, 0, 0.5) 50%);
+    background-size: 200%;
+    transition: background-position 0.2s;
+}
+
+.highlight-3:hover {
+    background-position: -100%;
+    cursor: pointer;
+}
+
+.highlight-4 {
+    background-image: linear-gradient(to right, transparent 50%, rgba(255, 0, 149, 0.2) 50%);
+    background-size: 200%;
+    transition: background-position 0.2s;
+}
+
+.highlight-4:hover {
+    background-position: -100%;
+    cursor: pointer;
+}
