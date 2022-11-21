@@ -13,17 +13,16 @@
 </head>
 
 <body>
-
     <nav>
         <div class="navbar">
             <div class="logo">
                 <a href="./index.html"><img src="./assets/CN logo-red-nobckgrd-2.png" alt=""></a>
             </div>
-            <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <span id="open" onclick="openNav()"><img src="./assets/original/nav/nav-dark-02.png" alt=""></span>
         </div>
         
         <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()"><img src="./assets/original/nav/nav-dark-01.png" alt=""></a>
             <div class="overlay-content">
                 <a href="./about-me.html">About Me</a>
                 <a href="./kh-careers.html">Kennards Hire Careers Page</a>
@@ -36,10 +35,6 @@
         </div>
     </nav>
     
-    
-
-
-
     <section class="welcome">
         <div class="welcome-text">
             <h1>I'm Carl - I create fresh and <span class="highlight">thoughtful</span> designs to make life a little more delightful. I enjoy <span class="highlight-2">collaboration</span>, <span class="highlight-3">inclusive design</span>, and <span class="highlight-4">continuously learning</span> new and exciting things.</h1>

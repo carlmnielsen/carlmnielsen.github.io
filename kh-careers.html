@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" href="./styles.css" />
     <meta charset="UTF-8">
@@ -19,13 +18,20 @@
             <div class="logo">
                 <a href="./index.html"><img src="./assets/CN logo-red-nobckgrd-2.png" alt=""></a>
             </div>
-            <div class="menu-items">
-                <li><a href="./about-me.html">About Me</a></li>
-                <li><a href="./kh-careers.html">Kennards Hire Careers Page</a></li>
-                <li><a href="./chidori.html">Chidori</a></li>
-                <li><a href="./easytrak.html">EasyTrak</a></li>
-                <li><a href="./re-engagement.html">Contact Re-engagement</a></li>
-                <li><a href="./dreambeam.html">Dreambeam</a></li>
+            <span id="open" onclick="openNav()"><img src="./assets/original/nav/nav-dark-02.png" alt=""></span>
+        </div>
+    
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()"><img
+                    src="./assets/original/nav/nav-dark-01.png" alt=""></a>
+            <div class="overlay-content">
+                <a href="./about-me.html">About Me</a>
+                <a href="./kh-careers.html">Kennards Hire Careers Page</a>
+                <a href="./chidori.html">Chidori</a>
+                <a href="./moast.html">Moast</a>
+                <a href="./easytrak.html">EasyTrak</a>
+                <a href="./re-engagement.html">Contact Re-engagement</a>
+                <a href="./dreambeam.html">Dreambeam</a>
             </div>
         </div>
     </nav>
@@ -153,9 +159,6 @@
         </div>  
     </section>
 
-    
-    
-
     <footer>
         <div class="footer-list">
             <ul class="socials">
@@ -167,4 +170,15 @@
         </div>
     </footer>
 
+    <script>
+        /* Open */
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        /* Close */
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
 </body>

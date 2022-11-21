@@ -38,8 +38,8 @@ body {
     display: inline-block;
     background: none;
     padding: 10px 20px;
-    border: 2px solid var(--orange);
-    border-radius: 6px;
+    border: 3px solid var(--orange);
+    border-radius: 4px;
     color: var(--orange);
 }
 
@@ -51,6 +51,10 @@ body {
 
 .navbar img {
     width: 60px;
+}
+
+a {
+    cursor: pointer;
 }
 
 /*__________________fonts__________________*/
@@ -115,6 +119,14 @@ nav {
     align-items: center;
 }
 
+nav #open img {
+    width: 40px;
+}
+
+nav #close img {
+    width: 40px;
+}
+
 .logo img {
     width: 60px;
 }
@@ -159,6 +171,10 @@ section img {
     background-color: var(--salmon);
     max-width: 100%;
     padding: 40px 10% 10px 10%;
+}
+
+.project-title {
+    padding: 50px 0 0 0;
 }
 
 .projects a {
@@ -236,7 +252,7 @@ section img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .socials li {
@@ -335,8 +351,8 @@ section img {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: var(--orange);
-    background-color: var(--orange);
+    background-color: var(--faun);
+    background-color: var(--faun);
     overflow-y: hidden;
     transition: 0.3s;
 }
@@ -345,30 +361,29 @@ section img {
     margin: 0 auto;
     position: relative;
     top: 160px;
-    width: 100%;
+    width: 95%;
     text-align: center;
     margin-top: 30px;
 }
 
-.overlay a {
+.overlay-content a {
     padding: 15px 10px;
     text-decoration: none;
     font-size: 30px;
-    color: var(--lightfaun);
+    color: var(--notBlack);
     display: block;
     transition: 0.3s;
 }
 
 .overlay a:hover,
 .overlay a:focus {
-    color: var(--white);
+    color: var(--orange);
 }
 
 .overlay .closebtn {
     position: absolute;
-    top: 36px;
+    top: 60px;
     right: 10%;
-    font-size: 60px;
 }
 
 @media screen and (max-height: 450px) {
