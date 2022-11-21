@@ -13,21 +13,32 @@
 </head>
 
 <body>
+
     <nav>
         <div class="navbar">
             <div class="logo">
                 <a href="./index.html"><img src="./assets/CN logo-red-nobckgrd-2.png" alt=""></a>
             </div>
-            <div class="menu-items">
-                <li><a href="./about-me.html">About Me</a></li>
-                <li><a href="./kh-careers.html">Kennards Hire Careers Page</a></li>
-                <li><a href="./chidori.html">Chidori</a></li>
-                <li><a href="./easytrak.html">EasyTrak</a></li>
-                <li><a href="./re-engagement.html">Contact Re-engagement</a></li>
-                <li><a href="./dreambeam.html">Dreambeam</a></li>
+            <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="./about-me.html">About Me</a>
+                <a href="./kh-careers.html">Kennards Hire Careers Page</a>
+                <a href="./chidori.html">Chidori</a>
+                <a href="./moast.html">Moast</a>
+                <a href="./easytrak.html">EasyTrak</a>
+                <a href="./re-engagement.html">Contact Re-engagement</a>
+                <a href="./dreambeam.html">Dreambeam</a>
             </div>
         </div>
     </nav>
+    
+    
+
+
 
     <section class="welcome">
         <div class="welcome-text">
@@ -113,6 +124,17 @@
         </div>
     </footer>
 
+    <script>
+        /* Open */
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        /* Close */
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
 </body>
 
 

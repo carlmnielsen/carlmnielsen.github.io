@@ -115,6 +115,10 @@ nav {
     align-items: center;
 }
 
+.logo img {
+    width: 60px;
+}
+
 .logo a {
     display: block;
 }
@@ -319,4 +323,66 @@ section img {
 .highlight-4:hover {
     background-position: -100%;
     cursor: pointer;
+}
+
+
+/*__________________header navigation__________________*/
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--orange);
+    background-color: var(--orange);
+    overflow-y: hidden;
+    transition: 0.3s;
+}
+
+.overlay-content {
+    margin: 0 auto;
+    position: relative;
+    top: 160px;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--lightfaun);
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: var(--white);
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 36px;
+    right: 10%;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
 }
