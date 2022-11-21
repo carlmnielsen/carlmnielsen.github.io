@@ -63,7 +63,7 @@ p,a,li {
     color: var(--notBlack);
 }
 
-p {
+p,li {
     margin: 0;
     line-height: 1.6rem;
 }
@@ -154,7 +154,7 @@ section img {
     margin: 0 auto;
     background-color: var(--salmon);
     max-width: 100%;
-    padding: 40px 10% 40px 10%;
+    padding: 40px 10% 10px 10%;
 }
 
 .projects a {
@@ -165,7 +165,7 @@ section img {
 }
 
 .projects p {
-    margin: 20px 0;
+    margin: 10px 0 20px 0;
 }
 
 .projects li {
@@ -189,11 +189,15 @@ section img {
     margin-bottom: 20px;
 }
 
-.details {
+.study {
     margin-bottom: 120px;
 }
 
-.details .description {
+.study .details {
+    margin-bottom: 100px;
+}
+
+.study .description {
     margin-bottom: 60px;
 }
 
@@ -209,6 +213,17 @@ section img {
     margin-right: 30px;
 }
 
+.details li {
+    list-style-type:disc;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.break {
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+}
 
 
 
