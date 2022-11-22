@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <script src="https://kit.fontawesome.com/087cb42062.js" crossorigin="anonymous"></script>
+    <title>Carl Nielsen's Portfolio Website</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -14,61 +13,88 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="./index.html"><img src="./assets/CN logo-red-nobckgrd-2.png" alt=""></a>
-        </div>
-        <div class="navbar" style="float: left;">
-            <div class="dropdown">
-                <button class="dropbtn">Work</button>
-                <div class="dropdown-content">
-                    <a href="./kh-careers.html">Kennards Hire Careers Page</a>
-                    <a href="./moast.html">Moast</a>
-                    <a href="./chidori.html">Chidori</a>
-                    <a href="./easytrak.html">EasyTrak</a>
-                    <a href="#">Contact Re-engagement</a>
-                </div>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/CN logo-red-nobckgrd-2.png" alt=""></a>
             </div>
-            <a href="./about-me.html">About Me</a>
+            <span id="open" onclick="openNav()"><img src="./assets/original/nav/nav-dark-02.png" alt=""></span>
         </div>
-    </header>
 
-    <div class="content">
-
-        <section>
-
-            <div class="intro">
-                <h1>Hey, 😃 I'm Carl</h1>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()"><img
+                    src="./assets/original/nav/nav-light-01.png" alt=""></a>
+            <div class="overlay-content">
+                <a href="./about-me.html">About Me</a>
+                <a href="./kh-careers.html">Kennards Hire Careers Page</a>
+                <a href="./chidori.html">Chidori</a>
+                <a href="./moast.html">Moast</a>
+                <a href="./easytrak.html">EasyTrak</a>
+                <a href="./re-engagement.html">Contact Re-engagement</a>
+                <a href="./dreambeam.html">Dreambeam</a>
             </div>
+        </div>
+    </nav>
 
-            <div class="profile">
+    <section class="project-intro">
+        <div class="project-title">
+            <h1>Hey, 😃 I'm Carl</h1>
+        </div>
+    </section>
+    
+    <section class="project">
+        <div class="details">
+            <div class="profile-image">
                 <img src="./assets/original/IMG-20220205-WA0007_2 2.jpg" alt="">
             </div>
-
             <div class="emojis">
                 <p>📚🏌🎮🎨</p>
             </div>
-
-            <div class="para">
+            <div class="description" id="bio">
+                <p>Currently employed as an Digital CX Coordinator, I am looking to move into a role where I’m able to use the skills
+                developed from studying a Bachelor of Product Design, and from further studies of user experience, user interface design
+                and website development.</p>
+                <p>My current role has provided me with a unique and broad overview of the digital design world through responsibilities
+                such as: UI component creation, primary CMS admin, email marketing admin, SEO admin, user behaviour analysis and website
+                performance analysis. Overtime I’ve also developed my technical, creative and critical thinking skills, and gained
+                expertise to assist me in tackling complex design problems.</p>
                 <p>
-                    Currently employed as an Digital CX Coordinator, I am looking to move into a role where I’m able to use the skills developed from studying a Bachelor of Product Design, and from further studies of user experience, user interface design and website development.
-                    <br />
-                    <br />
-                    My current role has provided me with a unique and broad overview of the digital design world through responsibilities such as: UI component creation, primary CMS admin, email marketing admin, SEO admin, user behaviour analysis and website performance analysis. Overtime I’ve also developed my technical, creative and critical thinking skills, and gained expertise to assist me in tackling complex design problems.
-                    <br />
-                    <br />
-                    I’m passionate about improving the everyday experience of using products and technology, where I can create designs that are accessible, provide positive experiences, fulfill stakeholder needs and give value to all users.
-                </p>
+                I’m passionate about improving the everyday experience of using products and technology, where I can create designs that
+                are accessible, provide positive experiences, fulfill stakeholder needs and give value to all users.</p>
             </div>
-
-            <div class="callout">
-                <h4>Contact me</h4>
-                <p>I'm currently taking on freelance work and any career change opportunities, so please feel free to email as I'm always up for a chat.</p>
-                <a href="./about-me.html" class="button-2">Email</a>
+        </div>
+    </section>
+    <section class="callout" id="callout">
+        <div class="callout-content">
+            <h5>Contact me</h5>
+            <p>I'm currently taking on freelance work and any career change opportunities, so please feel free to email as
+                I'm always up for a chat.</p>
+            <div>
+                <a href="mailto:carlnielsen.96@gmail.com" class="button">Send Email</a>
             </div>
-        
-        </section> 
+        </div>
+    </section>
 
-    </div>
+    <footer>
+        <div class="footer-list">
+            <ul class="socials">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="mailto:carlnielsen.96@gmail.com">Email</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+            <p class="copyright">Copyright 2022 Carl Nielsen</p>
+        </div>
+    </footer>
+    
+    <script>
+        /* Open */
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
 
+        /* Close */
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
 </body>

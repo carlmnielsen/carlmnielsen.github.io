@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carl Nielsen's Portfolio Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/CN logo-red-nobckgrd-2.png" alt=""></a>
+            </div>
+            <span id="open" onclick="openNav()"><img src="./assets/original/nav/nav-dark-02.png" alt=""></span>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()"><img
+                    src="./assets/original/nav/nav-light-01.png" alt=""></a>
+            <div class="overlay-content">
+                <a href="./about-me.html">About Me</a>
+                <a href="./kh-careers.html">Kennards Hire Careers Page</a>
+                <a href="./chidori.html">Chidori</a>
+                <a href="./moast.html">Moast</a>
+                <a href="./easytrak.html">EasyTrak</a>
+                <a href="./re-engagement.html">Contact Re-engagement</a>
+                <a href="./dreambeam.html">Dreambeam</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-intro">
+        <div class="project-title">
+            <h1>Chidori Stool</h1>
+        </div>
+        <div class="callout" id="callout">
+            <div class="callout-content">
+                <h5>Summary</h5>
+                <p>Timber is an incredible natural material that is both visually and structurally appreciated. Chidori, a simple yet
+                complex design explores Japan’s intrinsic connection to timber through the use of the ‘chidori’ as the fundamental
+                joint. The result is an aesthetic that compliments both the material and history of Japanese woodworking, as well as a
+                functional stool.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project">
+        <div class="details">
+            <div class="description">
+                <h2>Prototyping</h2>
+                <p>After initial sketching, small scaled down prototypes were made out of white card, paper and balsa for form flexibility
+                and to reflect semi-realistic material constraints. I’d become interested in how Japanese wood workers combined the use
+                of raw timber and canvas and took inspiration from traditional Japanese lanterns. Fixings and fasteners weren’t allowed
+                to be used, only joinery, to hold the hole piece together. The chidori joint was chosen due to its simple finish but
+                complex technique.</p>
+            </div>
+            <div class="process-image">
+                <img src="./assets/original/kh-careers/kh-careers-create-2.png" alt="">
+            </div>
+        </div>
+        <div class="details">
+            <div class="description">
+                <h2>Making Cuts and Assembly</h2>
+                <p>A traditional half lap was used for each cross beam for maximum support. These were glued in and clamped down to dry.
+                Once the stool was assembled it was sanded and a thin lacquer was applied to enhance the colours of the chosen timber.</p>
+            </div>
+            <div class="process-image">
+                <img src="./assets/original/kh-careers/kh-careers-create-2.png" alt="">
+            </div>
+        </div>
+        <div class="details">
+            <div class="description">
+                <h2>Finishing Touches</h2>
+                <p>A canvas cover was sewed together which would fit snug over half of the stool, highlighting the topmost chidori joint
+                and reflecting the lantern like aesthetic that caught my interest.</p>
+            </div>
+            <div class="process-image">
+                <img src="./assets/original/kh-careers/kh-careers-create-2.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-list">
+            <ul class="socials">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="mailto:carlnielsen.96@gmail.com">Email</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+            <p class="copyright">Copyright 2022 Carl Nielsen</p>
+        </div>
+    </footer>
+    
+    <script>
+        /* Open */
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        /* Close */
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+
+</body>

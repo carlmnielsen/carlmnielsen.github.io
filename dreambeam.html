@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carl Nielsen's Portfolio Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/CN logo-red-nobckgrd-2.png" alt=""></a>
+            </div>
+            <span id="open" onclick="openNav()"><img src="./assets/original/nav/nav-dark-02.png" alt=""></span>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()"><img
+                    src="./assets/original/nav/nav-light-01.png" alt=""></a>
+            <div class="overlay-content">
+                <a href="./about-me.html">About Me</a>
+                <a href="./kh-careers.html">Kennards Hire Careers Page</a>
+                <a href="./chidori.html">Chidori</a>
+                <a href="./moast.html">Moast</a>
+                <a href="./easytrak.html">EasyTrak</a>
+                <a href="./re-engagement.html">Contact Re-engagement</a>
+                <a href="./dreambeam.html">Dreambeam</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-intro">
+        <div class="project-title">
+            <h1>Dreambeam</h1>
+        </div>
+        <div class="callout" id="callout">
+            <div class="callout-content">
+                <h5>Summary</h5>
+                <p>The brief was to replace an existing products brand identity (Bosch cordless screwdriver) with another existing brand
+                (Sunbeam), maintaining the new brands core values and aesthetic.</p>
+                <p>Dreambeam reflects the retro yet modern style that Sunbeam tries to tie in with the overall look of their products. The
+                determined manufacturing process and the function of the screwdriver also represents the ease of use that accompanies
+                Sunbeam products and their intent to produce durable and affordable appliances.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project">
+        <div class="details">
+            <div class="description">
+                <h2>Detailed Features</h2>
+                <p>The chosen shape mirrors a retro style and also functions as a
+                comfortable, balanced, and ergonomic form. The skeletal frame was
+                created to allow for a quick and easy manufacturing process and long
+                lasting product life.</p>
+            </div>
+            <div class="process-image">
+                <img src="./assets/original/kh-careers/kh-careers-create-2.png" alt="">
+            </div>
+            <div class="process">
+                <div class="step">
+                    <div class="step-icon">
+                        <img src="./assets/original/kh-careers/Process-01.png" alt="">
+                    </div>
+                    <div>
+                        <p>01<br /><strong>Analyse</strong> and measure current state performance usability issues and significant
+                            <strong>pain points</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <img src="./assets/original/kh-careers/Process-02.png" alt="">
+                    </div>
+                    <div>
+                        <p>02<br />Consider current <strong>brand guidelines</strong> and <strong>competitor solutions</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="details">
+            <div class="description">
+                <h2>Exploded Perspective</h2>
+                <p>An exploded view of the electric screwdriver, detailing the battery position, motor
+                and circuitry.</p>
+            </div>
+            <div class="process-image">
+                <img src="./assets/original/kh-careers/kh-careers-create-2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-list">
+            <ul class="socials">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="mailto:carlnielsen.96@gmail.com">Email</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+            <p class="copyright">Copyright 2022 Carl Nielsen</p>
+        </div>
+    </footer>
+
+    <script>
+        /* Open */
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        /* Close */
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+
+</body>

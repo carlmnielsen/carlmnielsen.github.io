@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carl Nielsen's Portfolio Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/CN logo-red-nobckgrd-2.png" alt=""></a>
+            </div>
+            <span id="open" onclick="openNav()"><img src="./assets/original/nav/nav-dark-02.png" alt=""></span>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()"><img
+                    src="./assets/original/nav/nav-light-01.png" alt=""></a>
+            <div class="overlay-content">
+                <a href="./about-me.html">About Me</a>
+                <a href="./kh-careers.html">Kennards Hire Careers Page</a>
+                <a href="./chidori.html">Chidori</a>
+                <a href="./moast.html">Moast</a>
+                <a href="./easytrak.html">EasyTrak</a>
+                <a href="./re-engagement.html">Contact Re-engagement</a>
+                <a href="./dreambeam.html">Dreambeam</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-intro">
+        <div class="project-title">
+            <h1>EasyTrak</h1>
+        </div>
+        <div class="callout" id="callout">
+            <div class="callout-content">
+                <h5>Summary</h5>
+                <p>The brief was to design a landing page for a EasyTrak, a Kennards Hire product that is targeted towards complex trade
+                customers who are most of the time on site and across multiple projects. EasyTrak is a tool and ecosystem offering the
+                acquisition and analysis of equipment data on site. It provides end-to-end site visibility positively impacting cost,
+                servicing, productivity, safety, and environmental factors.</p>
+                <p>
+                The main challenges were the short time frame this had to be completed in and understanding the people who this page
+                would be targeted towards. Ultimately this lead to creating an easy to understand and quickly digestable design
+                utilising iconography, and relevant imagery.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project">
+        <div class="details">
+            <div class="description">
+                <h2>Sketching and Wireframing</h2>
+                <p>All wireframes were created in Figma following a review of existing EasyTrak content
+                and assets. All new assets were created in Photoshop and illustrator and exported for
+                digital usage.</p>
+                <p>Initial designs had product value propositions placed lower on the page, however
+                after review these were pushed to the top, alongside other product benefits.</p>
+            </div>
+            <div class="process-image">
+                <img src="./assets/original/kh-careers/kh-careers-create-2.png" alt="">
+            </div>
+        </div>
+        <div class="details">
+            <div class="description">
+                <h2>Final Design</h2>
+                <p>Once the high-fidelity wireframes were complete they were
+                handed over for development along with related assets. The
+                design was then tweaked on the website backend, Magento,
+                until we were happy with the final result.
+                </p>
+                <p>
+                This page was under ongoing performance review, using
+                Google Analytics to understand who was viewing the page and
+                if the content suited their needs correctly. Hotjar was also used
+                to draw out any usability issues or behaviour patterns we could
+                improve upon.</p>
+            </div>
+            <div class="process-image">
+                <img src="./assets/original/kh-careers/kh-careers-create-2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-list">
+            <ul class="socials">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="mailto:carlnielsen.96@gmail.com">Email</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+            <p class="copyright">Copyright 2022 Carl Nielsen</p>
+        </div>
+    </footer>
+
+    <script>
+        /* Open */
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        /* Close */
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+
+</body>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carl Nielsen's Portfolio Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/CN logo-red-nobckgrd-2.png" alt=""></a>
+            </div>
+            <span id="open" onclick="openNav()"><img src="./assets/original/nav/nav-dark-02.png" alt=""></span>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()"><img
+                    src="./assets/original/nav/nav-light-01.png" alt=""></a>
+            <div class="overlay-content">
+                <a href="./about-me.html">About Me</a>
+                <a href="./kh-careers.html">Kennards Hire Careers Page</a>
+                <a href="./chidori.html">Chidori</a>
+                <a href="./moast.html">Moast</a>
+                <a href="./easytrak.html">EasyTrak</a>
+                <a href="./re-engagement.html">Contact Re-engagement</a>
+                <a href="./dreambeam.html">Dreambeam</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-intro">
+        <div class="project-title">
+            <h1>Contact <nobr>Re-engagement</nobr></h1>
+        </div>
+        <div class="callout" id="callout">
+            <div class="callout-content">
+                <h5>Summary</h5>
+                <p>Creating an automated re-engagement campaign was part of setting up a first time contact cleaning process within
+                Kennards Hire’s email marketing platform, Bronto.</p>
+                <p>Inactive or unengaged contacts were being sent content that they potentially no longer wanted to engage with. These
+                contacts were filtered out and sent through this automated re-engagement workflow where they could either confirm their
+                engagement over two emails separated by a delay, or unsubscribe if they no longer wanted to receive content.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project">
+        <div class="details">
+            <div class="description">
+                <h2>Design Considerations</h2>
+                <p>The goal for asset creation in this email campaign was to produce an engaging hero
+                banner that contact would see first. Also being considered when designing the above
+                hero banners was Kennards Hire’s two most prevalent customer types, DIYers and
+                tradies, as well as the Kennards Hire marketing major campaign which had only just
+                launched just prior to this.</p>
+            </div>
+            <div class="process-image">
+                <img src="./assets/original/kh-careers/kh-careers-create-2.png" alt="">
+            </div>
+        </div>
+        <div class="details">
+            <div class="description">
+                <h2>Final Design</h2>
+                <p>The hero banner in the first message had to be eye catching
+                and somewhat personal, as though a Kennards team member
+                was reaching out to the user for as much possible engagement.
+                The second messages banner needed to incentivise the contact
+                not only though the clear discount code but also through strong
+                actionable language targeted at the main customer types.</p>
+                <p>All assets were created within Photoshop and Illustrator for both
+                desktop and mobile views. These were then imported to Bronto
+                where the rest of the message was created, jumping between a
+                WYSIWYG content editor and HTML/CSS.</p>
+            </div>
+            <div class="process-image">
+                <img src="./assets/original/kh-careers/kh-careers-create-2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-list">
+            <ul class="socials">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="mailto:carlnielsen.96@gmail.com">Email</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+            <p class="copyright">Copyright 2022 Carl Nielsen</p>
+        </div>
+    </footer>
+
+    <script>
+        /* Open */
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        /* Close */
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+
+</body>

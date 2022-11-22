@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <script src="https://kit.fontawesome.com/087cb42062.js" crossorigin="anonymous"></script>
+    <title>Carl Nielsen's Portfolio Website</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -15,101 +14,95 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="./index.html"><img src="./assets/CN logo-red-nobckgrd-2.png" alt=""></a>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/CN logo-red-nobckgrd-2.png" alt=""></a>
+            </div>
+            <span id="open" onclick="openNav()"><img src="./assets/original/nav/nav-dark-02.png" alt=""></span>
         </div>
-        <div class="navbar" style="float: left;">
-            <div class="dropdown">
-                <button class="dropbtn">Work</button>
-                <div class="dropdown-content">
-                    <a href="./kh-careers.html">Kennards Hire Careers Page</a>
-                    <a href="./moast.html">Moast</a>
-                    <a href="./chidori.html">Chidori</a>
-                    <a href="./easytrak.html">EasyTrak</a>
-                    <a href="#">Contact Re-engagement</a>
-                </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()"><img
+                    src="./assets/original/nav/nav-light-01.png" alt=""></a>
+            <div class="overlay-content">
+                <a href="./about-me.html">About Me</a>
+                <a href="./kh-careers.html">Kennards Hire Careers Page</a>
+                <a href="./chidori.html">Chidori</a>
+                <a href="./moast.html">Moast</a>
+                <a href="./easytrak.html">EasyTrak</a>
+                <a href="./re-engagement.html">Contact Re-engagement</a>
+                <a href="./dreambeam.html">Dreambeam</a>
             </div>
-            <a href="./about-me.html">About Me</a>
         </div>
-    </header>
+    </nav>
 
-    <div class="content">
-
-        <section>
-
-            <div class="intro">
-                <h1>Toaster Radical Redesign</h1>
+    <section class="project-intro">
+        <div class="project-title">
+            <h1>Moast Toaster</h1>
+        </div>
+        <div class="callout" id="callout">
+            <div class="callout-content">
+                <h5>Summary</h5>
+                <p>Moast was a radical redesign of an existing appliance (a toaster), where Arduino, Javascript and 3D printing were used
+                to make a functioning lookalike model. Hygiene, portability, and toasting control were three user needs identified and
+                resolved after extensive research and performance testing. These factors would likely be implemented more effectively
+                into toasters of the future.</p>
             </div>
-            
-            <div class="callout">
-                <h4>Summary</h4>
-                <p>
-                    Moast was a radical redesign of an existing appliance (a toaster), where Arduino, Javascript and 3D printing were used to make a functioning lookalike model. Hygiene, portability, and toasting control were three user needs identified and resolved after extensive research and performance testing. These factors would likely be implemented more effectively into toasters of the future.
-                </p>
-                <p>
-                    <strong>Role:</strong> Research, Ideation, Prototyping
-                </p>
-                <p>
-                    <strong>Tools Used:</strong> User research > User testing > Javascript > Arduino</p>
-            </div>
+        </div>
+    </section>
 
-            <div class="para">
-                <h2>User Research</h2>
-                <p>
-                    Initial user research that included: surveys, interviews, interactive card sorting and user prototype testing, was
-                    conducted to gain an understanding of how current toasters are performing to meet a variety of user needs. Hygiene, portability, and toasting control were three user needs identified and were the key drivers of how the final radical redesign looked and felt.
-                </p>
-                <div class="medium">
-                    <img src="./assets/original/moast/moast-user-research-2.png" alt="">
-                </div>
+    <section class="project">
+        <div class="details">
+            <div class="description">
+                <h2>Research</h2>
+                <p>Initial user research that included: surveys, interviews, interactive card sorting and user prototype testing, was
+                conducted to gain an understanding of how current toasters are performing to meet a variety of user needs. Hygiene,
+                portability, and toasting control were three user needs identified and were the key drivers of how the final radical
+                redesign looked and felt.</p>
             </div>
-
-            <div class="break" style="text-align:center;">
-                <svg height="20" width="120">
-                    <g fill="none" stroke="#FF8300" stroke-width="2">
-                        <path stroke-linecap="round" d="M 2 2 l116 0" />
-                        <path stroke-linecap="round" d="M 2 16 l116 0" />
-                    </g>
-                </svg>
+            <div class="process-image">
+                <img src="./assets/original/kh-careers/kh-careers-create-2.png" alt="">
             </div>
+        </div>
+        <div class="details">
+            <div class="description">
+                <h2>Final Design</h2>
+                <p>The final design resulted in an ergonomic hand-held toaster featuring a powerful
+                heating element allows the user to produce the right amount of toasting control.</p>
 
-            <div class="para">
-                <h2>User Testing</h2>
-                <p>
-                    Initial user research that included: surveys, interviews, interactive card sorting and user prototype testing,
-                    was conducted to gain an understanding of how current toasters are performing to meet a variety of user needs.
-                    Hygiene, portability, and toasting control were three user needs identified and were the key drivers of how the
-                    final radical redesign looked and felt.
-                </p>
-                <div class="medium">
-                    <img src="./assets/original/moast.png" alt="">
-                </div>
+                <p>The slimline exposed design allows for little to no interaction with the bread being
+                toasted, removing the chance of cross gluten contamination and need for tedious
+                cleaning. Lastly the toasters small footprint was meant for maximum portability for on
+                the go cooks, future technology allowing for capable portable power.</p>
             </div>
-
-            <div class="break" style="text-align:center;">
-                <svg height="20" width="120">
-                    <g fill="none" stroke="#FF8300" stroke-width="2">
-                        <path stroke-linecap="round" d="M 2 2 l116 0" />
-                        <path stroke-linecap="round" d="M 2 16 l116 0" />
-                    </g>
-                </svg>
+            <div class="process-image">
+                <img src="./assets/original/kh-careers/kh-careers-create-2.png" alt="">
             </div>
+        </div>
+    </section>
 
-            <div class="para">
-                <h2>Final Result</h2>
-                <p>
-                    The final design resulted in an ergonomic hand-held toaster featuring a powerful heating element allows the user to
-                    produce the right amount of toasting control. The slimline exposed design allowed for little to no interaction with the
-                    bread being toasted, removing the chance of cross gluten contamination and need for tedious cleaning. Lastly the
-                    toasters small footprint was meant for maximum portability for on the go cooks, future technology allowing for capable
-                    portable power.
-                </p>
-                <div class="medium">
-                    <img src="./assets/original/moast.png" alt="">
-                </div>
-            </div>
+    <footer>
+        <div class="footer-list">
+            <ul class="socials">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="mailto:carlnielsen.96@gmail.com">Email</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+            <p class="copyright">Copyright 2022 Carl Nielsen</p>
+        </div>
+    </footer>
 
-        </section>
+    <script>
+        /* Open */
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        /* Close */
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
 
 </body>

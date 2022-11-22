@@ -6,10 +6,13 @@
     --orange: #FF8300;
     --darkOrange: #ec7f0b;
     --salmon: #F0E6E2;
+    --mint: #EBF5EE;
+    --lavendar: #EBEDF5;
     --lightfaun: #f8f7f5;
-    --faun: rgb(245, 243, 235);
+    --darkfaun: #e9e6db;
+    --faun: #f5f3eb;
     --notBlack: #333333;
-    --grey: #b6b6b6;
+    --grey: #cecece;
     --white: #fff;
 }
 
@@ -166,8 +169,6 @@ nav #close img {
 .overlay-content a {
     padding: 15px 10px;
     text-decoration: none;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
     font-size: 24px;
     color: var(--white);
     display: block;
@@ -232,7 +233,7 @@ section img {
 .other-work {
     display: block;
     margin: 0 auto;
-    background-color: var(--salmon);
+    background-color: var(--darkfaun);
     max-width: 100%;
     padding: 40px 10% 10px 10%;
 }
@@ -256,7 +257,7 @@ section img {
     line-height: 1.2em;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: underline 3px var(--orange);
     text-underline-offset: 6px;
 }
 
@@ -267,7 +268,7 @@ section img {
 
 .studies li {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .callout {
@@ -333,7 +334,18 @@ section img {
     max-width: 900px;
 }
 
+.profile-image img {
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
 
+.emojis {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 10px;
+    line-height: 1.8333em;
+}
 
 .socials{
     display: flex;
@@ -365,15 +377,6 @@ section img {
         flex-direction: row;
     }
 
-    .studies a {
-        font-size: 1.25em;
-        line-height: 1.2em;
-        font-family: 'Playfair Display', serif;
-        font-weight: bold;
-        text-decoration: underline;
-        text-underline-offset: 6px;
-    }
-
     .studies p {
         width: 80%;
         margin: 10px 0 20px 0;
@@ -388,7 +391,29 @@ section img {
         margin-bottom: 60px;
         display: flex;
         flex-direction: row;
+        align-items: center;
         flex-wrap: nowrap;
+    }
+
+    .thumbnail {
+        margin-right: 80px;
+    }
+
+    .figure .thumbnail {
+        width: 50%;
+    }
+
+    .figure .description {
+        width: 50%;
+    }
+
+    .figure#right {
+        flex-direction: row-reverse;
+    }
+
+    .figure#right img {
+        margin-left: 60px;
+        margin-right: 0;
     }
 }
 
