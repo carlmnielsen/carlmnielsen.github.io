@@ -125,6 +125,10 @@ nav #open img {
     width: 20px;
 }
 
+#open:hover {
+    cursor: pointer;
+}
+
 nav #close img {
     width: 20px;
 }
@@ -144,8 +148,8 @@ nav #close img {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: var(--faun);
-    background-color: var(--faun);
+    background-color: var(--orange);
+    background-color: var(--orange);
     overflow-y: hidden;
     transition: 0.3s;
 }
@@ -163,9 +167,9 @@ nav #close img {
     padding: 15px 10px;
     text-decoration: none;
     font-family: 'Playfair Display', serif;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 20px;
-    color: var(--notBlack);
+    color: var(--white);
     display: block;
     transition: 0.5s;
 }
@@ -193,6 +197,7 @@ section img {
 .welcome-text {
     margin: 0 auto;
     padding: 50px 0;
+    max-width: 700px;
 }
 
 .latest-work {
@@ -205,10 +210,27 @@ section img {
 
 .figure {
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.figure.right {
+    flex-direction: column;
+}
+
+.description {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 600px;
 }
 
 .description p {
     margin-bottom: 20px;
+}
+
+.project-title {
+    padding: 50px 0 0 0;
 }
 
 .other-work {
@@ -219,22 +241,36 @@ section img {
     padding: 40px 10% 10px 10%;
 }
 
-.project-title {
-    padding: 50px 0 0 0;
+.other-projects {
+    margin: 0 auto;
+    max-width: 600px;
 }
 
-.projects a {
+.studies {
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.studies a {
     font-size: 1.25em;
     line-height: 1.2em;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
 
-.projects p {
+.studies p {
+    width: 100%;
     margin: 10px 0 20px 0;
 }
 
-.projects li {
+.studies li {
+    width: 100%;
     margin-bottom: 40px;
 }
 
@@ -245,6 +281,7 @@ section img {
     padding: 30px 0 40px;
     margin-bottom: 100px;
     margin-top: 60px;
+    max-width: 900px;
 }
 
 .callout-content {
@@ -255,15 +292,15 @@ section img {
     margin-bottom: 20px;
 }
 
-.study {
+.project {
     margin-bottom: 120px;
 }
 
-.study .details {
+.project .details {
     margin-bottom: 100px;
 }
 
-.study .description {
+.project .description {
     margin-bottom: 60px;
 }
 
@@ -271,7 +308,8 @@ section img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 60px;
+    max-width: 400px;
+    margin: 0 auto 60px auto;
 }
 
 .step img{
@@ -291,6 +329,13 @@ section img {
     margin-bottom: 60px;
 }
 
+.project {
+    max-width: 800px;
+}
+
+.project-intro {
+    max-width: 900px;
+}
 
 
 
@@ -315,13 +360,40 @@ section img {
 
 /* small tablet styles */
 @media screen and (min-width: 600px) {
-    
+    .studies {
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .studies a {
+        font-size: 1.25em;
+        line-height: 1.2em;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        text-decoration: underline;
+        text-underline-offset: 6px;
+    }
+
+    .studies p {
+        width: 80%;
+        margin: 10px 0 20px 0;
+    }
+
+    .studies li {
+        width: 50%;
+        margin-bottom: 40px;
+    }
 }
 
 /* large tablets and laptop styles */
 @media screen and (min-width: 960px) {
     
 }
+
 /* desktop styles */
 @media screen and (min-width: 1200px) {
     nav {
