@@ -4,9 +4,10 @@
 /*__________________variables__________________*/
 :root {
     --orange: #FF8300;
+    --darkOrange: #ec7f0b;
     --salmon: #F0E6E2;
     --lightfaun: #f8f7f5;
-    --faun: #F5F3EB;
+    --faun: rgb(245, 243, 235);
     --notBlack: #333333;
     --grey: #b6b6b6;
     --white: #fff;
@@ -38,15 +39,16 @@ body {
     display: inline-block;
     background: none;
     padding: 10px 20px;
-    border: 3px solid var(--orange);
+    color: var(--white);
+    background: var(--orange);
     border-radius: 4px;
-    color: var(--orange);
 }
 
 .button:hover {
-    color: var(--white);
-    background: var(--orange);
-    transition: 0.2s;
+    color: var(--faun);
+    background: var(--darkOrange);
+    box-shadow: 0 8px 8px -6px rgba(160, 153, 132, 0.555);
+    transition: 0.1s;
 }
 
 .navbar img {
@@ -120,11 +122,11 @@ nav {
 }
 
 nav #open img {
-    width: 40px;
+    width: 20px;
 }
 
 nav #close img {
-    width: 40px;
+    width: 20px;
 }
 
 .logo img {
@@ -133,6 +135,50 @@ nav #close img {
 
 .logo a {
     display: block;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--faun);
+    background-color: var(--faun);
+    overflow-y: hidden;
+    transition: 0.3s;
+}
+
+.overlay-content {
+    margin: 0 auto;
+    position: relative;
+    top: 160px;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay-content a {
+    padding: 15px 10px;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--notBlack);
+    display: block;
+    transition: 0.5s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: var(--orange);
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 72px;
+    right: 10%;
 }
 
 section {
@@ -344,48 +390,7 @@ section img {
 
 /*__________________header navigation__________________*/
 
-.overlay {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: var(--faun);
-    background-color: var(--faun);
-    overflow-y: hidden;
-    transition: 0.3s;
-}
 
-.overlay-content {
-    margin: 0 auto;
-    position: relative;
-    top: 160px;
-    width: 95%;
-    text-align: center;
-    margin-top: 30px;
-    margin-left: 20px;
-}
-
-.overlay-content a {
-    padding: 15px 10px;
-    text-decoration: none;
-    font-size: 30px;
-    color: var(--notBlack);
-    display: block;
-    transition: 0.5s;
-}
-
-.overlay a:hover,
-.overlay a:focus {
-    color: var(--orange);
-}
-
-.overlay .closebtn {
-    position: absolute;
-    top: 60px;
-    right: 10%;
-}
 
 @media screen and (max-height: 450px) {
     .overlay {
