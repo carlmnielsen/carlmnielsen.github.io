@@ -215,10 +215,6 @@ section img {
     flex-wrap: nowrap;
 }
 
-.figure.right {
-    flex-direction: column;
-}
-
 .description {
     margin: 0 auto;
     margin-bottom: 20px;
@@ -386,6 +382,13 @@ section img {
     .studies li {
         width: 50%;
         margin-bottom: 40px;
+    }
+
+    .figure {
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 }
 
