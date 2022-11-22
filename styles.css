@@ -364,6 +364,7 @@ section img {
     width: 95%;
     text-align: center;
     margin-top: 30px;
+    margin-left: 20px;
 }
 
 .overlay-content a {
@@ -372,7 +373,7 @@ section img {
     font-size: 30px;
     color: var(--notBlack);
     display: block;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .overlay a:hover,
