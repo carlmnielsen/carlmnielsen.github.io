@@ -347,6 +347,8 @@ section img {
     line-height: 1.8333em;
 }
 
+
+
 .socials{
     display: flex;
     flex-direction: row;
@@ -415,6 +417,16 @@ section img {
         margin-left: 60px;
         margin-right: 0;
     }
+
+    .process {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .process-image img {
+        width: 49.5%;
+    }
+
 }
 
 /* large tablets and laptop styles */
