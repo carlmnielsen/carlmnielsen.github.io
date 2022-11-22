@@ -167,8 +167,8 @@ nav #close img {
     padding: 15px 10px;
     text-decoration: none;
     font-family: 'Playfair Display', serif;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 24px;
     color: var(--white);
     display: block;
     transition: 0.5s;
@@ -176,7 +176,7 @@ nav #close img {
 
 .overlay a:hover,
 .overlay a:focus {
-    color: var(--orange);
+    color: var(--grey);
 }
 
 .overlay .closebtn {
