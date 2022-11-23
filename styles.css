@@ -4,12 +4,13 @@
 /*__________________variables__________________*/
 :root {
     --orange: #FF8300;
-    --darkOrange: #ec7f0b;
+    --darkOrange: #d47510;
     --salmon: #F0E6E2;
     --mint: #EBF5EE;
     --lavendar: #EBEDF5;
     --lightfaun: #f8f7f5;
     --darkfaun: #e9e6db;
+    --darkerfaun: #a7a290;
     --faun: #f5f3eb;
     --notBlack: #333333;
     --grey: #cecece;
@@ -50,6 +51,23 @@ body {
 .button:hover {
     color: var(--faun);
     background: var(--darkOrange);
+    box-shadow: 0 8px 8px -6px rgba(160, 153, 132, 0.555);
+    transition: 0.1s;
+}
+
+.button-2 {
+    display: inline-block;
+    background: none;
+    padding: 7.5px 20px;
+    color: var(--orange);
+    background: none;
+    border: var(--orange) 3px solid;
+    border-radius: 4px;
+}
+
+.button-2:hover {
+    color: var(--orange);
+    background: rgb(245, 245, 245);
     box-shadow: 0 8px 8px -6px rgba(160, 153, 132, 0.555);
     transition: 0.1s;
 }
@@ -289,6 +307,15 @@ section img {
     margin-bottom: 20px;
 }
 
+.contact-mode {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-mode .cta-1 {
+    margin-bottom: 30px;
+}
+
 .project {
     margin-bottom: 120px;
 }
@@ -346,8 +373,6 @@ section img {
     letter-spacing: 10px;
     line-height: 1.8333em;
 }
-
-
 
 .socials{
     display: flex;
@@ -425,6 +450,15 @@ section img {
 
     .process-image img {
         width: 49.5%;
+    }
+
+    .contact-mode {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .contact-mode .cta-1 {
+        margin-right: 30px;
     }
 
 }
