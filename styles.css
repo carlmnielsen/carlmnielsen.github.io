@@ -5,6 +5,8 @@
 :root {
     --orange: #FF8300;
     --darkOrange: #d47510;
+    --blue: #007cff;
+    --darkBlue: #0c68cb;
     --salmon: #F0E6E2;
     --mint: #EBF5EE;
     --lavendar: #EBEDF5;
@@ -70,6 +72,83 @@ body {
     background: rgb(245, 245, 245);
     box-shadow: 0 8px 8px -6px rgba(160, 153, 132, 0.555);
     transition: 0.1s;
+}
+
+.button-4 {
+    display: inline-block;
+    background: none;
+    padding: 10px 20px;
+    color: var(--white);
+    background: var(--blue);
+    border-radius: 4px;
+}
+
+.button-4:hover {
+    color: var(--faun);
+    background: var(--darkBlue);
+    box-shadow: 0 8px 8px -6px rgba(160, 153, 132, 0.555);
+    transition: 0.1s;
+}
+
+.button-block {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*__________________big orange button__________________*/
+.button-3 {
+    position:relative;
+    display:inline-block;
+}
+  
+.button-3 a {
+    color:white;
+    font-family: 'Roboto' , sans-serif;
+    font-weight:bold;
+    font-size:30px;
+    text-align: center;
+    text-decoration:none;
+    background-color:#FFA12B;
+    display:block;
+    position:relative;
+    padding: 8px 30px;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.button-3 a:active {
+    top:10px;
+    background-color:#F78900;
+
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+}
+
+.button-3:after {
+    content:"";
+    height:100%;
+    width:100%;
+    padding:4px;
+    position: absolute;
+    bottom:-15px;
+    left:-4px;
+    z-index:-1;
+    background-color:#2B1800;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 .navbar img {
