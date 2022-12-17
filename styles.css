@@ -275,6 +275,7 @@ nav #close img {
 .overlay a:hover,
 .overlay a:focus {
     color: var(--grey);
+    
 }
 
 .overlay .closebtn {
@@ -290,6 +291,7 @@ section {
 
 section img {
     width: 100%;
+    border-radius: 4px;
 }
 
 .welcome-text {
@@ -528,7 +530,7 @@ section img {
     }
 
     .process-image img {
-        width: 49.5%;
+        width: 49.7%;
     }
 
     .contact-mode {
