@@ -96,6 +96,46 @@ body {
     justify-content: center;
 }
 
+.boujee-text {
+    --bg-size: 400%;
+    --color-one: #ffbb00;
+    --color-two: #ff4800;
+    background: linear-gradient(90deg,
+            var(--color-one),
+            var(--color-two),
+            var(--color-one)) 0 0 / var(--bg-size) 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.underline {
+    text-decoration: underline 3px var(--orange);
+    text-underline-offset: 6px;
+    --bg-size: 400%;
+    --color-one: #ffa600;
+    --color-two: #ff4800;
+    background: linear-gradient(90deg,
+            var(--color-one),
+            var(--color-two),
+            var(--color-one)) 0 0 / var(--bg-size) 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .boujee-text {
+        animation: move-bg 8s linear infinite;
+    }
+
+    @keyframes move-bg {
+        to {
+            background-position: var(--bg-size) 0;
+        }
+    }
+}
+
 /*__________________big orange button__________________*/
 .button-3 {
     position:relative;
