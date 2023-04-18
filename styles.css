@@ -621,7 +621,7 @@ section img {
 /*__________________copy hover__________________*/
 
 .highlight {
-    background-image: linear-gradient(to right, transparent 50%, rgb(255, 238, 0, 0.5) 50%);
+    background-image: linear-gradient(to right, transparent 50%, #c8e0fa 50%);
     background-size: 200%;
     transition: background-position 0.2s;
 }
@@ -632,7 +632,7 @@ section img {
 }
 
 .highlight-2 {
-    background-image: linear-gradient(to right, transparent 50%, rgba(115, 255, 0, 0.3) 50%);
+    background-image: linear-gradient(to right, transparent 50%, #c3ffd5 50%);
     background-size: 200%;
     transition: background-position 0.2s;
 }
@@ -643,7 +643,7 @@ section img {
 }
 
 .highlight-3 {
-    background-image: linear-gradient(to right, transparent 50%, rgba(255, 123, 0, 0.5) 50%);
+    background-image: linear-gradient(to right, transparent 50%, #ffd3c1 50%);
     background-size: 200%;
     transition: background-position 0.2s;
 }
