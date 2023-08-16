@@ -238,7 +238,7 @@ h4 {
 
 h5 {
     font-family: 'Space Mono', monospace;
-    font-size: 1em; /* 16px --> 16 ÷ 16 = 1 */
+    font-size: 1.25em; /* 16px --> 16 ÷ 16 = 1 */
     text-transform: uppercase;
     color: var(--orange);
 }
