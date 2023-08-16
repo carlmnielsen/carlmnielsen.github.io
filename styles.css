@@ -463,7 +463,7 @@ section img {
 .step {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: top    ;
     max-width: 400px;
     margin: 0 auto 60px auto;
 }
@@ -526,6 +526,19 @@ section img {
 
 .header.finisher-header {
     width: 100%;
+}
+
+.next-project {
+    margin-top: 60px;
+}
+
+.next-project a{
+    font-size: 1.25em;
+    line-height: 1.2em;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    text-decoration: underline 3px var(--orange);
+    text-underline-offset: 6px;
 }
 
 
@@ -595,6 +608,10 @@ section img {
     
     .contact-mode .cta-1 {
         margin-right: 30px;
+    }
+
+    .step p{
+        padding-right: 40px;
     }
 
 }
