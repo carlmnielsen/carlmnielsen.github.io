@@ -59,10 +59,9 @@ body {
 
 .button-2 {
     display: inline-block;
-    fill: #fff;
     padding: 7.5px 20px;
     color: var(--orange);
-    background: none;
+    background: #fff;
     border: var(--orange) 3px solid;
     border-radius: 4px;
 }
