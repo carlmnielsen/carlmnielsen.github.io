@@ -61,7 +61,7 @@ body {
     display: inline-block;
     padding: 7.5px 20px;
     color: var(--orange);
-    background: #fff;
+    background: none;
     border: var(--orange) 3px solid;
     border-radius: 4px;
 }
@@ -216,19 +216,19 @@ p,li {
 h1 {
     font-size: 1.875em; /* 30px --> 30 ÷ 16 = 1.875 */
     line-height: 1.8333em; /* 55px --> 55 ÷ 30 = 1.8333 */
-    font-family: 'Playfair Display', serif;
+    font-family: 'Space Mono', monospace;
 }
 
 h2 {
     font-size: 1.375em; /* 22px --> 22 ÷ 16 = 1.375 */
     line-height: 1.0909em; /* 24px --> 24 ÷ 22 = 1.090909(09) */
-    font-family: 'Playfair Display', serif;
+    font-family: 'Space Mono', monospace;
 }
 
 h3 {
     font-size: 1.25em; /* 20px --> 20 ÷ 16 = 1.25 */
     line-height: 1.2em; /* 24px --> 24 ÷ 20 = 1.2 */
-    font-family: 'Playfair Display', serif;
+    font-family: 'Space Mono', monospace;
 }
 
 h4 {
@@ -237,12 +237,14 @@ h4 {
 }
 
 h5 {
+    font-family: 'Space Mono', monospace;
     font-size: 1em; /* 16px --> 16 ÷ 16 = 1 */
     text-transform: uppercase;
     color: var(--orange);
 }
 
 h6 {
+    font-family: 'Space Mono', monospace;
     font-size: 1em;
     line-height: 1.333em; /* 24px --> 24 ÷ 18 = 1.3333333(3) */
     text-transform: uppercase;
@@ -299,10 +301,10 @@ nav #close img {
     top: 160px;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
 }
 
 .overlay-content a {
+    font-family: 'Space Mono', monospace;
     padding: 15px 10px;
     text-decoration: none;
     font-size: 24px;
@@ -319,8 +321,14 @@ nav #close img {
 
 .overlay .closebtn {
     position: absolute;
-    top: 72px;
-    right: 10%;
+    top: 80px;
+}
+
+.closebtn-position {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 60px auto 0;
+    max-width: 80%;
 }
 
 section {
@@ -393,7 +401,7 @@ section img {
 .studies a {
     font-size: 1.25em;
     line-height: 1.2em;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Space Mono', monospace;
     font-weight: bold;
     text-decoration: underline 3px var(--orange);
     text-underline-offset: 6px;
@@ -407,6 +415,10 @@ section img {
 .studies li {
     width: 100%;
     margin-bottom: 20px;
+}
+
+.callout h5 {
+    color: var(--orange);
 }
 
 .callout {
@@ -514,7 +526,6 @@ section img {
 
 .header.finisher-header {
     width: 100%;
-    height: 680px;
 }
 
 
@@ -610,8 +621,9 @@ section img {
 
     .header.finisher-header {
         width: 100%;
-        height: 400px;
+        height: 500px;
     }
+
 }
 
 /* hamburger menu */
