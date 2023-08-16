@@ -624,6 +624,8 @@ section img {
         height: 500px;
     }
 
+    .closebtn-position {
+        max-width: 900px;
 }
 
 /* hamburger menu */
