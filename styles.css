@@ -59,7 +59,7 @@ body {
 
 .button-2 {
     display: inline-block;
-    background: none;
+    fill: #fff;
     padding: 7.5px 20px;
     color: var(--orange);
     background: none;
