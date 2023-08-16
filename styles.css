@@ -221,7 +221,7 @@ h1 {
 
 h2 {
     font-size: 1.375em; /* 22px --> 22 ÷ 16 = 1.375 */
-    line-height: 1.0909em; /* 24px --> 24 ÷ 22 = 1.090909(09) */
+    line-height: 1.4em; /* 24px --> 24 ÷ 22 = 1.090909(09) */
     font-family: 'Space Mono', monospace;
 }
 
