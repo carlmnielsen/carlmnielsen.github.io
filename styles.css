@@ -90,37 +90,9 @@ body {
 }
 
 .button-block {
-    display:flex;
+    display: inline;
     align-items: center;
     justify-content: center;
-}
-
-.boujee-text {
-    --bg-size: 400%;
-    --color-one: #ffbb00;
-    --color-two: #ff4800;
-    background: linear-gradient(90deg,
-            var(--color-one),
-            var(--color-two),
-            var(--color-one)) 0 0 / var(--bg-size) 100%;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
-.underline {
-    text-decoration: underline 3px var(--orange);
-    text-underline-offset: 6px;
-    --bg-size: 400%;
-    --color-one: #ffa600;
-    --color-two: #ff4800;
-    background: linear-gradient(90deg,
-            var(--color-one),
-            var(--color-two),
-            var(--color-one)) 0 0 / var(--bg-size) 100%;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -139,28 +111,31 @@ body {
 .button-3 {
     position:relative;
     display:inline-block;
+    top: 0px;
+    cursor: pointer;
 }
   
 .button-3 a {
     color:white;
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'Space Mono', monospace;
     font-weight:bold;
     font-size:30px;
     text-align: center;
     text-decoration:none;
-    background-color:#FFA12B;
+    background-color: var(--orange);
     display:block;
     position:relative;
-    padding: 8px 30px;
-
+    padding:0px 10px;
+    z-index: 2;
+    
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    text-shadow: 0px 1px 0px #000;
+    text-shadow: 0px 0px 0px #000;
     filter: dropshadow(color=#000, offx=0px, offy=1px);
-
+    
     -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
     -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
     box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
-
+    
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -168,11 +143,10 @@ body {
 
 .button-3 a:active {
     top:10px;
-    background-color:#F78900;
-
-    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
-    -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
-    box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  background-color: var(--darkOrange);
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
 }
 
 .button-3:after {
@@ -183,12 +157,13 @@ body {
     position: absolute;
     bottom:-15px;
     left:-4px;
-    z-index:-1;
+    z-index:1;
     background-color:#2B1800;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
+
 
 .navbar img {
     width: 60px;
@@ -286,7 +261,7 @@ nav #close img {
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     left: 0;
     background-color: var(--orange);
@@ -298,7 +273,7 @@ nav #close img {
 .overlay-content {
     margin: 0 auto;
     position: relative;
-    top: 160px;
+    top: 140px;
     width: 100%;
     text-align: center;
 }
@@ -344,7 +319,7 @@ section img {
 .welcome-text {
     margin: 0 auto;
     padding: 50px 0;
-    max-width: 700px;
+    max-width: 800px;
 }
 
 .latest-work {
@@ -524,7 +499,7 @@ section img {
     margin-bottom: 30px;
 }
 
-.header.finisher-header {
+.header {
     width: 100%;
 }
 
@@ -632,7 +607,7 @@ section img {
         width: 800px;
     }
 
-    .header.finisher-header {
+    .header {
         width: 100%;
         height: 500px;
     }
@@ -711,3 +686,59 @@ section img {
         right: 35px;
     }
 }
+
+
+
+/*__________________candy clicker__________________*/
+
+.treat {
+    --scale-x: 0;
+    --scale-y: 0;
+    pointer-events: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(50% - .5rem);
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vmin;
+    transform: 
+      translate(
+        calc( var(--x) * 1px ), 
+        calc( var(--y) * 1px )
+      ) 
+      translate(-50%, -50%);
+    pointer-events: none;
+    animation: 
+      treat-enter .1s ease-in backwards, 
+      treat-exit 300ms linear 
+      calc( (var(--lifetime, 3000) * 1ms) - 300ms) 
+      forwards;
+  
+    @keyframes treat-enter {
+      from {
+        opacity: 0;
+      }
+    }
+    @keyframes treat-exit {
+      to {
+        opacity: 0;
+      }
+    }
+    
+    .inner {
+      animation: inner-rotate .6s linear infinite;
+      transform: rotate( 
+        calc(-1turn * var(--direction) )
+      ); 
+      @keyframes inner-rotate {
+        to { 
+          transform: none;
+        } 
+      }
+    }
+  }
