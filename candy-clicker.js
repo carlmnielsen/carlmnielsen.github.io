@@ -199,8 +199,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Prevent the default behavior of the button click
     event.preventDefault();
 
-    // Create 10 treats and add them to the treats array
-    createMultipleTreats(6);
+    // Create 6 treats and add them to the treats array
+    createMultipleTreats(4);
   });
 
   // Event listener for elButton click
@@ -208,8 +208,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Prevent the default behavior of the button click
     event.preventDefault();
 
-    // Create 10 treats and add them to the treats array
-    createMultipleTreats(10);
+    // Create 6 treats and add them to the treats array
+    createMultipleTreats(4);
   });
 
   // Start the animation loop
