@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HW0E2XW5GW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HW0E2XW5GW');
+</script>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Carl Nielsen | Product Designer (UX/UI) in Sydney</title>
+    <link rel="icon" type="image/x-icon" href="./assets/original/favicon-1.ico.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <meta property="og:image" content="https://carln.design/assets/original/image-link-share.jpg" />
+    <meta property="og:description" content="I'm Carl - I create fresh and thoughtful designs to make life a little more delightful. I enjoy collaboration, inclusive design, and continuously learning new and exciting things." />
+    <meta property="og:url" content="https://carln.design/" />
+    <meta property="og:title" content="Carl Nielsen Design" />
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="/"><img src="./assets/CN logo-red-nobckgrd-2.png" alt=""></a>
+            </div>
+            <span id="open" onclick="openNav()"><img src="./assets/original/nav/nav-dark-02.png" alt=""></span>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <div class="closebtn-position">
+                <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()"><img src="./assets/original/nav/nav-light-01.png" alt=""></a>
+            </div>
+            <div class="overlay-content">
+                <a href="./about-me.html">About Me</a>
+                <a href="./kh-careers.html">Kennards Hire Careers Page</a>
+                <a href="./chidori.html">Chidori</a>
+                <a href="./moast.html">Moast</a>
+                <a href="./easytrak.html">EasyTrak</a>
+                <a href="./re-engagement.html">Contact Re-engagement</a>
+                <a href="./dreambeam.html">Dreambeam</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-intro">
+        <div class="project-title">
+            <h1>Services</h1>
+        </div>
+    </section>
+    
+    <section class="service">
+        <div class="service-detail">
+            <h3>Discovery</h3>
+            <p>Before jumping into any visual design work, it’s critical to understand the current state of your business or project from the UX/UI perspective and the specific goals you want to achieve with my help in the short and mid term.</p>
+            <button class="accordion">Specifics</button>
+            <div class="panel">
+                <ul class="accordion-item">
+                    <li>Workshop with relevant stakeholders to identify what your project or business need from the UX/UI perspective
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <section class="project">
+        <div class="details">
+            <div class="profile-image">
+                <img src="./assets/original/IMG-20220205-WA0007_2 2.jpg" alt="">
+            </div>
+            <div class="emojis">
+                <p>📚🏌🎮🎨</p>
+            </div>
+            <div class="description" id="bio">
+                <p>Currently employed as an Digital CX Coordinator, I am looking to move into a role where I’m able to use the skills
+                developed from studying a Bachelor of Product Design, and from further studies of user experience, user interface design
+                and website development.</p>
+                <p>My current role has provided me with a unique and broad overview of the digital design world through responsibilities
+                such as: UI component creation, primary CMS admin, email marketing admin, SEO admin, user behaviour analysis and website
+                performance analysis. Overtime I’ve also developed my technical, creative and critical thinking skills, and gained
+                expertise to assist me in tackling complex design problems.</p>
+                <p>
+                I’m passionate about improving the everyday experience of using products and technology, where I can create designs that
+                are accessible, provide positive experiences, fulfill stakeholder needs and give value to all users.</p>
+            </div>
+        </div>
+    </section>
+    <section class="callout" id="callout">
+        <div class="callout-content">
+            <h5>Contact me</h5>
+            <p>I'm currently taking on freelance work and career change opportunities within UX/UI design. Feel free to email me or message me on LinkedIn as I'm always up for a chat.</p>
+            <div class="contact-mode">
+                <div class="cta-1">
+                    <a href="mailto:hello@carln.design" class="button">Send Email</a>
+                </div>
+                <div class="cta-2">
+                    <a href="https://www.linkedin.com/in/carlmnielsen/" target="_blank" class="button-2">Message On LinkedIn</a>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-list">
+            <ul class="socials">
+                <li><a href="/">Home</a></li>
+                <li><a href="mailto:carln.product.design@gmail.com">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/carlmnielsen/" target="_blank">LinkedIn</a></li>
+            </ul>
+            <p class="copyright">Copyright 2022 Carl Nielsen</p>
+        </div>
+    </footer>
+    
+    <script>
+        /* Open */
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        /* Close */
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
+</body>

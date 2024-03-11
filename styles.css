@@ -207,6 +207,7 @@ h3 {
 }
 
 h4 {
+    font-family: 'Space Mono', monospace;
     font-size: 1em;
     line-height: 1.333em; /* 24px --> 24 ÷ 18 = 1.3333333(3) */
 }
@@ -512,6 +513,84 @@ section img {
     text-underline-offset: 6px;
 }
 
+.service {
+    background: none;
+    border-radius: 4px;
+    max-width: 800px;
+}
+
+/*__________________accordion__________________*/
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+}
+
+.accordion {
+    background-color: transparent;
+    color: var(--notBlack);
+    cursor: pointer;
+    padding: 18px 0px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+  }
+
+button.accordion  {
+    font-family: 'Space Mono', monospace;
+    font-size: 1em; /* 20px --> 20 ÷ 16 = 1.25 */
+    font-weight: 600;
+    line-height: 1.2em;
+    max-width: 600px;
+    background-color: none;
+  }
+
+.accordion-item ul {
+    list-style-type: circle;
+    padding: 0;
+    margin: 0;
+}
+.accordion-item li {
+    list-style-type: circle !important;
+    margin-bottom: 8px;
+}
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: none;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: none;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .panel p {
+    padding: 20px 40px;
+  }
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #FF8300 !important;
+    float: right;
+    margin-left: 10px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+
 
 /* small tablet styles */
 @media screen and (min-width: 600px) {
@@ -742,3 +821,5 @@ section img {
       }
     }
   }
+
+  

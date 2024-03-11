@@ -57,7 +57,7 @@ function createTreat() {
   // Set the initial position just above button 3
   const button3Rect = elButton.getBoundingClientRect();
   el.style.left = `${button3Rect.left + button3Rect.width / 2}px`;
-  el.style.top = `${button3Rect.top - 38}px`;
+  el.style.top = `${button3Rect.top - 2}px`;
 
   // Append the treat element to the wrapper
   elWrapper.appendChild(el);
