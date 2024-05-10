@@ -3,7 +3,7 @@
 
 /*__________________variables__________________*/
 :root {
-    --orange: #FF8300;
+    --orange: #FF4F00;
     --darkOrange: #d47510;
     --blue: #007cff;
     --darkBlue: #0c68cb;
@@ -11,12 +11,13 @@
     --mint: #EBF5EE;
     --lavendar: #EBEDF5;
     --lightfaun: #f8f7f5;
-    --darkfaun: #e9e6db;
-    --darkerfaun: #a7a290;
-    --faun: #f5f3eb;
+    --acid: #CDE4E1;
+    --darkacid: #a1c2bd;
+    --faun: #FFFDF9;
     --notBlack: #333333;
     --grey: #cecece;
-    --white: #fff;
+    --white: #FFFDF9;
+    --lemonade: #F6FFDC;
 }
 
 
@@ -42,12 +43,15 @@ body {
 }
 
 .button {
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+    font-size: 1.25em;
     display: inline-block;
     background: none;
     padding: 10px 20px;
     color: var(--white);
     background: var(--orange);
-    border-radius: 4px;
+    border-radius: 3px;
 }
 
 .button:hover {
@@ -58,12 +62,15 @@ body {
 }
 
 .button-2 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+    font-size: 1.25em;
     display: inline-block;
-    padding: 7.5px 20px;
-    color: var(--orange);
+    padding: 8px 20px;
+    color: var(--notBlack);
     background: none;
-    border: var(--orange) 3px solid;
-    border-radius: 4px;
+    border: var(--notBlack) 2px solid;
+    border-radius: 3px;
 }
 
 .button-2:hover {
@@ -274,7 +281,7 @@ nav #close img {
 .overlay-content {
     margin: 0 auto;
     position: relative;
-    top: 140px;
+    top: 120px;
     width: 100%;
     text-align: center;
 }
@@ -309,12 +316,12 @@ nav #close img {
 
 section {
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
 }
 
 section img {
     width: 100%;
-    border-radius: 4px;
+    border-radius: 3px;
 }
 
 .welcome-text {
@@ -355,7 +362,7 @@ section img {
 .other-work {
     display: block;
     margin: 0 auto;
-    background-color: var(--darkfaun);
+    background-color: var(--acid);
     max-width: 100%;
     padding: 40px 10% 10px 10%;
 }
@@ -394,11 +401,11 @@ section img {
 }
 
 .callout h5 {
-    color: var(--orange);
+    color: var(--notBlack);
 }
 
 .callout {
-    background: var(--white);
+    background: var(--lemonade);
     border: none;
     border-radius: 4px;
     padding: 30px 0 40px;
@@ -542,11 +549,11 @@ section img {
   }
 
 button.accordion  {
-    font-family: 'Space Mono', monospace;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1em; /* 20px --> 20 ÷ 16 = 1.25 */
     font-weight: 600;
     line-height: 1.2em;
-    max-width: 600px;
+    max-width: auto;
     background-color: none;
   }
 
@@ -568,7 +575,7 @@ button.accordion  {
   /* Style the accordion panel. Note: hidden by default */
   .panel {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 90%;
     background-color: none;
     display: none;
     overflow: hidden;
@@ -577,6 +584,12 @@ button.accordion  {
   .panel p {
     padding: 20px 40px;
   }
+
+  .panel li {
+    list-style-type: circle !important;
+
+  }
+  
 
   .accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
@@ -590,6 +603,9 @@ button.accordion  {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
 
+  .service-detail {
+    margin-bottom: 40px;
+  }
 
 
 /* small tablet styles */
@@ -821,5 +837,3 @@ button.accordion  {
       }
     }
   }
-
-  

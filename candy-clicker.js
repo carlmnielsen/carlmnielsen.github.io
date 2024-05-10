@@ -22,7 +22,7 @@ function getRandomInt(min, max) {
 }
 
 // Array of treat emojis
-const treatmojis = ["✨", "✨", "✨", "✨", "✨"];
+const treatmojis = ["🔥", "👾", "👽", "✨", "⚡️"];
 
 // Array to store treat objects
 const treats = [];
@@ -66,7 +66,7 @@ function createTreat() {
   const rect = el.getBoundingClientRect();
 
   // Set a random lifetime for the treat
-  const lifetime = getRandomArbitrary(2000, 3000);
+  const lifetime = getRandomArbitrary(1000, 1100);
 
   // Set a CSS variable for the treat's lifetime
   el.style.setProperty("--lifetime", lifetime);
