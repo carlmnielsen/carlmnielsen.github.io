@@ -225,7 +225,6 @@ h4 {
 h5 {
     font-family: 'Space Mono', monospace;
     font-size: 1.25em; /* 16px --> 16 ÷ 16 = 1 */
-    text-transform: uppercase;
     color: var(--notBlack);
 }
 
@@ -233,7 +232,6 @@ h6 {
     font-family: 'Space Mono', monospace;
     font-size: 1em;
     line-height: 1.333em; /* 24px --> 24 ÷ 18 = 1.3333333(3) */
-    text-transform: uppercase;
 }
 
 /*__________________mobile styles__________________*/
@@ -297,6 +295,7 @@ nav #close img {
     width: 100%;
     height: 100%;
     z-index: -1;
+    text-align: center;
 }
 
 .overlay-content a {
