@@ -4,7 +4,7 @@
 /*__________________variables__________________*/
 :root {
     --orange: #FF4F00;
-    --darkOrange: #d47510;
+    --darkOrange: #c13e02;
     --blue: #007cff;
     --darkBlue: #0c68cb;
     --salmon: #F0E6E2;
@@ -236,17 +236,21 @@ h6 {
 /*__________________mobile styles__________________*/
 nav {
     margin: 60px auto 0;
-    max-width: 80%
+    max-width: 90%
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+
 }
 
 nav #open img {
     width: 20px;
+    padding: 16px;
+    background-color: var(--acid);
+    border-radius: 3px;
 }
 
 #open:hover {
@@ -255,6 +259,9 @@ nav #open img {
 
 nav #close img {
     width: 20px;
+    padding: 16px;
+    background-color: var(--darkOrange);
+    border-radius: 3px;
 }
 
 .logo img {
@@ -279,11 +286,15 @@ nav #close img {
 }
 
 .overlay-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
     position: relative;
-    top: 120px;
     width: 100%;
-    text-align: center;
+    height: 100%;
+    z-index: -1;
 }
 
 .overlay-content a {
@@ -304,19 +315,18 @@ nav #close img {
 
 .overlay .closebtn {
     position: absolute;
-    top: 80px;
 }
 
 .closebtn-position {
     display: flex;
     flex-direction: row-reverse;
     margin: 60px auto 0;
-    max-width: 80%;
+    max-width: 90%;
 }
 
 section {
     margin: 0 auto;
-    width: 85%;
+    width: 90%;
 }
 
 section img {
@@ -326,8 +336,7 @@ section img {
 
 .welcome-text {
     margin: 0 auto;
-    padding: 50px 0;
-    max-width: 800px;
+    padding: 48px 0 24px 0;
 }
 
 .latest-work {
@@ -364,12 +373,12 @@ section img {
     margin: 0 auto;
     background-color: var(--acid);
     max-width: 100%;
-    padding: 40px 10% 10px 10%;
+    padding: 40px 5% 10px 5%;
 }
 
 .other-projects {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .studies {
@@ -405,9 +414,9 @@ section img {
 }
 
 .callout {
-    background: var(--lemonade);
+    background: var(--acid);
     border: none;
-    border-radius: 4px;
+    border-radius: 3px;
     padding: 30px 0 40px;
     margin-bottom: 100px;
     margin-top: 60px;
@@ -419,6 +428,28 @@ section img {
 }
 
 .callout-content p {
+    margin-bottom: 20px;
+}
+
+.summary h5 {
+    color: var(--notBlack);
+}
+
+.summary {
+    background: var(--lemonade);
+    border: none;
+    border-radius: 3px;
+    padding: 30px 0 40px;
+    margin-bottom: 100px;
+    margin-top: 60px;
+    max-width: 900px;
+}
+
+.summary-content {
+    padding: 0 10%;
+}
+
+.summary-content p {
     margin-bottom: 20px;
 }
 
@@ -440,7 +471,7 @@ section img {
 }
 
 .project .description {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .step {
@@ -469,7 +500,7 @@ section img {
 }
 
 .project {
-    max-width: 800px;
+    max-width: 900px;
 }
 
 .project-intro {
@@ -500,8 +531,13 @@ section img {
     padding: 0 20px;
 }
 
+.socials a {
+    color: var(--notBlack);
+
+}
+
 .copyright {
-    color: var(--grey);
+    color: var(--notBlack);
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
@@ -522,7 +558,7 @@ section img {
 
 .service {
     background: none;
-    border-radius: 4px;
+    border-radius: 3px;
     max-width: 800px;
 }
 
@@ -694,18 +730,11 @@ button.accordion  {
         max-width: 900px
     }
 
-    .welcome {
-        width: 800px;
-    }
-
     .latest-work {
-        width: 800px;
+        width: 900px;
     }
 
-    .header {
-        width: 100%;
-        height: 500px;
-    }
+
 
     .closebtn-position {
         max-width: 900px;
@@ -835,5 +864,48 @@ button.accordion  {
           transform: none;
         } 
       }
+    }
+  }
+
+
+  /*__________________rotating text__________________*/
+  .words-wrapper {
+    font-size: 40px;
+    line-height: 1.6em;
+    font-weight: bold;
+    text-align: center;
+
+  }
+  .words-wrapper .words {
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+    width: var(--width);
+    height: 64px;
+    padding: 0 10px;
+    border-radius: 3px;
+    color: var(--color, #000);
+    background: var(--color-bg, #ffc703);
+    box-sizing: content-box;
+    transition: all 0.7s;
+  }
+  .words-wrapper .words span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -100%);
+    transition: transform 0.7s, opacity 0.25s 0.25s;
+  }
+  .words-wrapper .words span.current {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  .words-wrapper .words span.next {
+    transform: translate(-50%, 100%);
+  }
+  @media (max-width: 700px) {
+    .words-wrapper .words {
+      width: var(--width-mobile) !important;
     }
   }
