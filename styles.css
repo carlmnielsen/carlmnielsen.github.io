@@ -3,6 +3,7 @@
 
 /*__________________variables__________________*/
 :root {
+    --lightorange: #FFBF6E;
     --orange: #FF4F00;
     --darkOrange: #c13e02;
     --blue: #007cff;
@@ -19,6 +20,7 @@
     --white: #FFFDF9;
     --darkwhite: #e9e3d9;
     --lemonade: #F6FFDC;
+    --darkgreen: #142216;
 }
 
 
@@ -224,7 +226,7 @@ h5 {
     font-family: 'Space Mono', monospace;
     font-size: 1.25em; /* 16px --> 16 ÷ 16 = 1 */
     text-transform: uppercase;
-    color: var(--orange);
+    color: var(--notBlack);
 }
 
 h6 {
@@ -371,7 +373,7 @@ section img {
 .other-work {
     display: block;
     margin: 0 auto;
-    background-color: var(--lavendar);
+    background-color: var(--lemonade);
     max-width: 100%;
     padding: 40px 5% 10px 5%;
 }
@@ -395,7 +397,7 @@ section img {
     line-height: 1.2em;
     font-family: 'Space Mono', monospace;
     font-weight: bold;
-    text-decoration: underline 3px var(--orange);
+    text-decoration: underline 3px var(--notBlack);
     text-underline-offset: 6px;
 }
 
@@ -409,22 +411,12 @@ section img {
     margin-bottom: 20px;
 }
 
-.callout h5 {
-    color: var(--notBlack);
-}
-
 .callout {
-    background: var(--acid);
-    border: none;
-    border-radius: 3px;
-    padding: 30px 0 40px;
-    margin-bottom: 100px;
-    margin-top: 60px;
-    max-width: 900px;
-}
-
-.callout-content {
-    padding: 0 10%;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--acid);
+    max-width: 100%;
+    padding: 40px 5% 40px 5%;
 }
 
 .callout-content p {
@@ -458,7 +450,11 @@ section img {
     flex-direction: column;
 }
 
-.contact-mode .cta-1 {
+.contact-mode .cta-1{
+    margin-bottom: 30px;
+}
+
+.contact-mode .cta-2{
     margin-bottom: 30px;
 }
 
@@ -520,6 +516,22 @@ section img {
     line-height: 1.8333em;
 }
 
+.footer {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--darkgreen);
+    max-width: 100%;
+    padding: 40px 5% 10px 5%;
+}
+
+.footer .logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: var(--white);
+    margin-bottom: 32px;
+}
+
 .socials{
     display: flex;
     flex-direction: row;
@@ -532,12 +544,12 @@ section img {
 }
 
 .socials a {
-    color: var(--notBlack);
+    color: var(--white);
 
 }
 
 .copyright {
-    color: var(--notBlack);
+    color: var(--white);
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
@@ -736,6 +748,10 @@ button.accordion  {
 
     .closebtn-position {
         max-width: 900px;
+    }
+
+    .callout-content {
+        padding: 0 10%;
     }
 }
 
