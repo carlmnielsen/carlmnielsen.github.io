@@ -17,6 +17,7 @@
     --notBlack: #333333;
     --grey: #cecece;
     --white: #FFFDF9;
+    --darkwhite: #e9e3d9;
     --lemonade: #F6FFDC;
 }
 
@@ -249,7 +250,7 @@ nav {
 nav #open img {
     width: 20px;
     padding: 16px;
-    background-color: var(--acid);
+    background-color: var(--darkwhite);
     border-radius: 3px;
 }
 
@@ -279,7 +280,6 @@ nav #close img {
     z-index: 3;
     top: 0;
     left: 0;
-    background-color: var(--orange);
     background-color: var(--orange);
     overflow-y: hidden;
     transition: 0.3s;
@@ -734,12 +734,12 @@ button.accordion  {
         width: 900px;
     }
 
-
-
     .closebtn-position {
         max-width: 900px;
     }
 }
+
+
 
 /* hamburger menu */
 
