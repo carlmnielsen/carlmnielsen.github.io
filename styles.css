@@ -9,7 +9,7 @@
     --darkBlue: #0c68cb;
     --salmon: #F0E6E2;
     --mint: #EBF5EE;
-    --lavendar: #EBEDF5;
+    --lavendar: #C1B6FF;
     --lightfaun: #f8f7f5;
     --acid: #CDE4E1;
     --darkacid: #a1c2bd;
@@ -371,7 +371,7 @@ section img {
 .other-work {
     display: block;
     margin: 0 auto;
-    background-color: var(--acid);
+    background-color: var(--lavendar);
     max-width: 100%;
     padding: 40px 5% 10px 5%;
 }
@@ -885,7 +885,7 @@ button.accordion  {
     padding: 0 10px;
     border-radius: 3px;
     color: var(--color, #000);
-    background: var(--color-bg, #ffc703);
+    background: var(--color-bg, #CDE4E1);
     box-sizing: content-box;
     transition: all 0.7s;
   }
@@ -895,7 +895,7 @@ button.accordion  {
     left: 50%;
     opacity: 0;
     transform: translate(-50%, -100%);
-    transition: transform 0.7s, opacity 0.25s 0.25s;
+    transition: transform 0.7s, opacity 0.20s 0.20s;
   }
   .words-wrapper .words span.current {
     opacity: 1;
