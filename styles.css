@@ -236,7 +236,7 @@ h6 {
 
 /*__________________mobile styles__________________*/
 nav {
-    margin: 60px auto 0;
+    margin: 24px auto 0;
     max-width: 90%
 }
 
@@ -321,7 +321,7 @@ nav #close img {
 .closebtn-position {
     display: flex;
     flex-direction: row-reverse;
-    margin: 60px auto 0;
+    margin: 24px auto 0;
     max-width: 90%;
 }
 
@@ -735,7 +735,6 @@ button.accordion  {
 /* desktop styles */
 @media screen and (min-width: 1200px) {
     nav {
-        margin: 60px auto 0;
         max-width: 900px
     }
 
@@ -753,6 +752,14 @@ button.accordion  {
     }
     .summary-content {
         padding: 0 10%;
+    }
+
+    .acknowledgement {
+        color: var(--white);
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 30px;
     }
 }
 z
