@@ -357,8 +357,6 @@ section img {
 
 .description {
     margin: 0 auto;
-    margin-bottom: 20px;
-    max-width: 600px;
 }
 
 .description p {
@@ -427,17 +425,36 @@ section img {
 }
 
 .summary {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0 auto;
     background-color: var(--acid);
-    max-width: 100%;
-    padding: 40px 5% 40px 5%;
+    max-width: 1200px;
     margin-bottom: 60px;
 }
 
 .summary .description {
-    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: calc(50% + 1px);
+    padding: 24px;
 }
+
+.hero-image{
+    display: flex;
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.hero-image .section img {
+    width: auto;
+    height: auto;
+    border-radius: 0 20px 20px 0 !important;
+}
+
+.hero-img-wrapper
 
 .contact-mode {
     display: flex;
@@ -461,6 +478,7 @@ section img {
 }
 
 .project .description {
+    max-width: 600px;
     margin-bottom: 40px;
 }
 
@@ -760,6 +778,11 @@ button.accordion  {
         margin: 0 auto;
         text-align: center;
         margin-bottom: 30px;
+    }
+
+    .summary {
+        flex-direction: row;
+        align-items: center;
     }
 }
 z
