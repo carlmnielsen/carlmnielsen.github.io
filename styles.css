@@ -427,33 +427,27 @@ section img {
 .summary {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
-    max-width: 1200px;
+    width: 100% !important;
     margin-bottom: 60px;
+}
+
+.summary .description-container {
+    display: flex;
+    height: 100%;
 }
 
 .summary .description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 24px;
-    background-color: var(--acid);
+    padding: 24px 60px;
+    background-color: var(--lemonade);
     border-radius: 4px;
+    height: 100%;
+    max-width: 50%;
 }
-
-.hero-image{
-    display: flex;
-    max-width: 100%;
-}
-
-.hero-image .section img {
-    width: auto;
-    height: auto;
-    border-radius: 0 20px 20px 0 !important;
-}
-
-.hero-img-wrapper
 
 .contact-mode {
     display: flex;
@@ -512,6 +506,13 @@ section img {
 
 .project-intro {
     max-width: 900px;
+}
+
+.half-half {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 60px;
 }
 
 .profile-image img {
