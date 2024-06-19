@@ -426,10 +426,9 @@ section img {
 
 .summary {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
-    background-color: var(--acid);
     max-width: 1200px;
     margin-bottom: 60px;
 }
@@ -438,14 +437,14 @@ section img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-basis: calc(50% + 1px);
     padding: 24px;
+    background-color: var(--acid);
+    border-radius: 4px;
 }
 
 .hero-image{
     display: flex;
-    flex-basis: 50%;
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .hero-image .section img {
