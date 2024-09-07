@@ -43,6 +43,10 @@ body {
     background: var(--faun);
     font-family: 'Roboto' , sans-serif;
     font-size: 16px;
+    background-color: #ffffff;
+    opacity: 1;
+    background-image: radial-gradient(#cbcbcbbf 1.3px, #ffffff 1.3px);
+    background-size: 26px 26px;
 }
 
 .button {
@@ -200,7 +204,7 @@ p,li {
 
 h1 {
     font-size: 1.875em; /* 30px --> 30 ÷ 16 = 1.875 */
-    line-height: 1.8333em; /* 55px --> 55 ÷ 30 = 1.8333 */
+    line-height: 1.4em; /* 55px --> 55 ÷ 30 = 1.8333 */
     font-family: 'Space Mono', monospace;
 }
 
@@ -364,7 +368,8 @@ section img {
 }
 
 .project-title {
-    padding: 50px 0 0 0;
+    margin: 50px 0 0 0;
+    background-color: var(--lemonade);
 }
 
 .other-work {
@@ -429,24 +434,33 @@ section img {
     flex-direction: row;
     justify-content: center;
     margin: 0 auto;
-    width: 100% !important;
     margin-bottom: 60px;
 }
 
-.summary .description-container {
-    display: flex;
-    height: 100%;
+.summary > div {
+    flex: 1;
+    box-sizing: border-box;
 }
+
+
+.image-fill-div {
+    width: 100%; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+}
+
 
 .summary .description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 24px 60px;
+    padding: 24px;
     background-color: var(--lemonade);
     border-radius: 4px;
     height: 100%;
-    max-width: 50%;
 }
 
 .contact-mode {
@@ -463,11 +477,11 @@ section img {
 }
 
 .project {
-    margin-bottom: 120px;
+    margin-bottom: 64px;
 }
 
 .project .details {
-    margin-bottom: 100px;
+    margin-bottom: 64px;
 }
 
 .project .description {
@@ -505,15 +519,10 @@ section img {
 }
 
 .project-intro {
-    max-width: 900px;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
-.half-half {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 60px;
-}
 
 .profile-image img {
     margin-bottom: 60px;
@@ -745,10 +754,6 @@ button.accordion  {
 
 }
 
-/* large tablets and laptop styles */
-@media screen and (min-width: 960px) {
-    
-}
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
@@ -768,9 +773,6 @@ button.accordion  {
         padding: 0 10%;
         max-width: 900px;
     }
-    .summary-content {
-        padding: 0 10%;
-    }
 
     .acknowledgement {
         color: var(--white);
@@ -783,13 +785,14 @@ button.accordion  {
     .summary {
         flex-direction: row;
         align-items: center;
+        max-width: 900px;
+    }
+
+    .summary .description {
+        padding: 24px 60px;
     }
 }
 z
-
-
-
-/* hamburger menu */
 
 
 /*__________________copy hover__________________*/
@@ -860,62 +863,6 @@ z
 }
 
 
-
-/*__________________candy clicker__________________*/
-
-.treat {
-    --scale-x: 0;
-    --scale-y: 0;
-    pointer-events: none;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: calc(50% - .5rem);
-    border-radius: 50%;
-    width: 1em;
-    height: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5vmin;
-    transform: 
-      translate(
-        calc( var(--x) * 1px ), 
-        calc( var(--y) * 1px )
-      ) 
-      translate(-50%, -50%);
-    pointer-events: none;
-    animation: 
-      treat-enter .1s ease-in backwards, 
-      treat-exit 300ms linear 
-      calc( (var(--lifetime, 3000) * 1ms) - 300ms) 
-      forwards;
-  
-    @keyframes treat-enter {
-      from {
-        opacity: 0;
-      }
-    }
-    @keyframes treat-exit {
-      to {
-        opacity: 0;
-      }
-    }
-    
-    .inner {
-      animation: inner-rotate .6s linear infinite;
-      transform: rotate( 
-        calc(-1turn * var(--direction) )
-      ); 
-      @keyframes inner-rotate {
-        to { 
-          transform: none;
-        } 
-      }
-    }
-  }
-
-
   /*__________________rotating text__________________*/
   .words-wrapper {
     font-size: 40px;
@@ -962,3 +909,5 @@ z
       width: var(--width-mobile) !important;
     }
   }
+
+
