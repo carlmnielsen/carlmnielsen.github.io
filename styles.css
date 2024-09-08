@@ -44,9 +44,7 @@ body {
     font-family: 'Roboto' , sans-serif;
     font-size: 16px;
     background-color: #ffffff;
-    opacity: 1;
-    background-image: radial-gradient(#cbcbcbbf 1.3px, #ffffff 1.3px);
-    background-size: 26px 26px;
+    
 }
 
 .button {
@@ -336,7 +334,7 @@ section {
 
 section img {
     width: 100%;
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 .welcome-text {
@@ -585,7 +583,7 @@ section img {
 
 .next-project a{
     font-size: 1.25em;
-    line-height: 1.2em;
+    line-height: 1.8em;
     font-family: 'Space Mono', monospace;
     font-weight: bold;
     text-decoration: underline 3px var(--notBlack);
@@ -678,6 +676,14 @@ button.accordion  {
   .service-detail {
     margin-bottom: 40px;
   }
+
+  .acknowledgement {
+    color: var(--white);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 
 /* small tablet styles */
@@ -774,13 +780,7 @@ button.accordion  {
         max-width: 900px;
     }
 
-    .acknowledgement {
-        color: var(--white);
-        max-width: 600px;
-        margin: 0 auto;
-        text-align: center;
-        margin-bottom: 30px;
-    }
+    
 
     .summary {
         flex-direction: row;
