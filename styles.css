@@ -52,7 +52,7 @@ body {
 
 .button {
     font-family: 'Space Mono', monospace;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.25em;
     display: inline-block;
     background: none;
@@ -68,7 +68,7 @@ body {
 
 .button-2 {
     font-family: 'Space Mono', monospace;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.25em;
     display: inline-block;
     padding: 8px 40px;
