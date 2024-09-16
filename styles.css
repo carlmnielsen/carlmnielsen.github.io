@@ -52,7 +52,7 @@ body {
 
 .button {
     font-family: 'Space Mono', monospace;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.25em;
     display: inline-block;
     background: none;
@@ -68,7 +68,7 @@ body {
 
 .button-2 {
     font-family: 'Space Mono', monospace;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.25em;
     display: inline-block;
     padding: 8px 40px;
@@ -209,7 +209,7 @@ nav #close img {
 .overlay-content a {
     font-family: 'Space Mono', monospace;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     padding: 15px 24px;
     text-decoration: none;
     color: var(--white);
@@ -476,11 +476,16 @@ section img {
     color: var(--orange);
 }
 
+.acknowledgement {
+    font-size: 14px;
+}
+
 .copyright {
     color: var(--white);
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    font-size: 14px;
 }
 
 .header {
@@ -697,8 +702,20 @@ button.accordion  {
     .summary .description {
         padding: 24px 60px;
     }
+
+    .overlay-content a {
+        font-family: 'Space Mono', monospace;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 15px 24px;
+        text-decoration: none;
+        color: var(--white);
+        display: block;
+        transition: 0.5s;
+    }
 }
-z
+
+
 
 
 /*__________________copy hover__________________*/
