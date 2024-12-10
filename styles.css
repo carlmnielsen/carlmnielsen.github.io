@@ -24,6 +24,7 @@
     --lemonade: #F6FFDC;
     --darkgreen: #142216;
     --lime: #D8F849;
+    --darklime: #2d3605;
 }
 
 
@@ -304,8 +305,8 @@ section img {
     line-height: 1.2em;
     font-family: 'Space Mono', monospace;
     font-weight: bold;
-    text-decoration: underline 3px var(--notBlack);
-    text-underline-offset: 6px;
+    text-decoration: underline 2px var(--notBlack);
+    text-underline-offset: 8px;
 }
 
 .studies p {
@@ -497,8 +498,8 @@ section img {
     line-height: 1.8em;
     font-family: 'Space Mono', monospace;
     font-weight: bold;
-    text-decoration: underline 3px var(--notBlack);
-    text-underline-offset: 6px;
+    text-decoration: underline 2px var(--notBlack);
+    text-underline-offset: 8px;
 }
 
 .service {
@@ -596,6 +597,41 @@ button.accordion  {
     margin-bottom: 30px;
 }
 
+.role {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: start;
+}
+
+.role-title {
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 8px;
+    margin-bottom: 16px;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    margin-right: 8px;
+    margin-bottom: 16px;
+
+}
+
+.tag span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--darklime);
+    padding: 4px 8px;
+    background-color: var(--lime);
+    border-radius: 4px;
+}
+
 
 /* small tablet styles */
 @media screen and (min-width: 600px) {
@@ -669,6 +705,11 @@ button.accordion  {
         padding-right: 40px;
     }
 
+    .role {
+        display: flex;
+        flex-direction: row;
+    }
+
 }
 
 
@@ -691,8 +732,6 @@ button.accordion  {
         max-width: 900px;
     }
 
-    
-
     .summary {
         flex-direction: row;
         align-items: center;
@@ -712,6 +751,11 @@ button.accordion  {
         color: var(--white);
         display: block;
         transition: 0.5s;
+    }
+
+    .role {
+        display: flex;
+        flex-direction: row;
     }
 }
 
