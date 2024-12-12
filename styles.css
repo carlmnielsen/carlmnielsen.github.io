@@ -626,7 +626,7 @@ button.accordion  {
 .tag span {
     font-size: 14px;
     font-weight: 500;
-    color: var(--darklime);
+    color: var(--notBlack);
     padding: 4px 8px;
     background-color: var(--lime);
     border-radius: 4px;
