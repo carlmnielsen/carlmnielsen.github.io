@@ -210,8 +210,8 @@ nav #close img {
 
 .overlay-content a {
     font-family: 'Space Mono', monospace;
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 700;
     padding: 15px 24px;
     text-decoration: none;
     color: var(--white);
