@@ -12,11 +12,12 @@
     --salmon: #F0E6E2;
     --mint: #EBF5EE;
     --lavendar: #C1B6FF;
-    --lightfaun: #f8f7f5;
     --acid: #CDE4E1;
     --midAcid: #bed3d0;
     --darkacid: #a1c2bd;
     --faun: #FFFDF9;
+    --lightfaun: #f8f7f5;
+    --darkfaun: #f5f0e9;
     --notBlack: #333333;
     --grey: #cecece;
     --white: #FFFDF9;
@@ -52,9 +53,9 @@ body {
 }
 
 .button {
-    font-family: 'Space Mono', monospace;
-    font-weight: 600;
-    font-size: 1.25em;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 500;
+    font-size: 1em;
     display: inline-block;
     background: none;
     padding: 10px 40px;
@@ -68,9 +69,9 @@ body {
 }
 
 .button-2 {
-    font-family: 'Space Mono', monospace;
-    font-weight: 600;
-    font-size: 1.25em;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 500;
+    font-size: 1em;
     display: inline-block;
     padding: 8px 40px;
     color: var(--notBlack);
@@ -139,9 +140,10 @@ h5 {
 }
 
 h6 {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Roboto' , sans-serif;
     font-size: 1em;
     line-height: 1.333em; /* 24px --> 24 ÷ 18 = 1.3333333(3) */
+    font-weight: 600;
 }
 
 /*__________________mobile styles__________________*/
@@ -198,20 +200,21 @@ nav #close img {
 .overlay-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin: 0 auto;
     position: relative;
     width: 100%;
+    max-width: 900px;
     height: 100%;
     z-index: -1;
-    text-align: center;
+    text-align: left;
 }
 
 .overlay-content a {
     font-family: 'Space Mono', monospace;
-    font-size: 22   px;
-    font-weight: 700;
+    font-size: 1.375em;
+    font-weight: 500;
     padding: 15px 24px;
     text-decoration: none;
     color: var(--white);
@@ -219,10 +222,13 @@ nav #close img {
     transition: 0.5s;
 }
 
+.no-hover {
+    pointer-events: none;
+}
+
 .overlay a:hover,
 .overlay a:focus {
     color: var(--grey);
-    
 }
 
 .overlay .closebtn {
@@ -274,9 +280,19 @@ section img {
     margin-bottom: 20px;
 }
 
+.bio p {
+    margin-bottom: 40px;
+}
+
 .project-title {
     margin: 50px 0 0 0;
     background-color: var(--lemonade);
+}
+
+.project-image img{
+    width: 100%;
+    max-width: 900px;
+    border-radius: 8px;
 }
 
 .other-work {
@@ -391,15 +407,21 @@ section img {
 }
 
 .project .description {
-    max-width: 600px;
+    max-width: 700px;
     margin-bottom: 40px;
+}
+
+.flex-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .step {
     display: flex;
     flex-direction: row;
     align-items: top    ;
-    max-width: 400px;
+    max-width: 350px;
     margin: 0 auto 60px auto;
 }
 
@@ -432,7 +454,7 @@ section img {
 
 .profile-image img {
     margin-bottom: 60px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .emojis {
@@ -686,7 +708,10 @@ button.accordion  {
 
     .process {
         display: flex;
+        flex-direction: row;
+        justify-items: center;
         flex-wrap: wrap;
+        max-width: 900px
     }
 
     .process-image img {
@@ -745,9 +770,9 @@ button.accordion  {
 
     .overlay-content a {
         font-family: 'Space Mono', monospace;
-        font-size: 24px;
-        font-weight: 600;
-        padding: 15px 24px;
+        font-size: 32px;
+        font-weight: 500;
+        padding: 15px 24px 15px 0;
         text-decoration: none;
         color: var(--white);
         display: block;
@@ -758,15 +783,23 @@ button.accordion  {
         display: flex;
         flex-direction: row;
     }
+
+    .profile-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .profile-image img {
+        max-width: 700px;
+    }
 }
-
-
 
 
 /*__________________copy hover__________________*/
 
 .highlight {
-    background-image: linear-gradient(to right, transparent 50%, #c8e0fa 50%);
+    background-image: linear-gradient(to right, transparent 50%, var(--lime) 50%);
     background-size: 200%;
     transition: background-position 0.2s;
 }
