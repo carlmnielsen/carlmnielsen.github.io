@@ -21,6 +21,7 @@
     --notBlack: #333333;
     --grey: #cecece;
     --midGrey: #a4a4a4;
+    --darkGrey: #666666;
     --white: #FFFDF9;
     --darkwhite: #e9e3d9;
     --lemonade: #F6FFDC;
@@ -161,7 +162,7 @@ h6 {
 
 /*__________________mobile styles__________________*/
 nav {
-    margin: 24px auto 0;
+    margin: 24px auto 24px;
     max-width: 90%
 }
 
@@ -298,7 +299,6 @@ section img {
 }
 
 .project-title {
-    margin: 50px 0 0 0;
     background-color: var(--lemonade);
 }
 
@@ -306,6 +306,13 @@ section img {
     width: 100%;
     max-width: 900px;
     border-radius: 8px;
+}
+
+.img-caption p{
+    font-size: 14px;
+    color: var(--darkGrey);
+    margin-top: 4px;
+    margin-bottom: 16px;
 }
 
 .other-work {
