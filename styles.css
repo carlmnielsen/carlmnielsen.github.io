@@ -834,7 +834,7 @@ button.accordion  {
 }
 
 .highlight-3 {
-    background-image: linear-gradient(to right, transparent 50%, #ffd3c1 50%);
+    background-image: linear-gradient(to right, transparent 50%, var(--lime) 50%);
     background-size: 200%;
     transition: background-position 0.2s;
 }
@@ -845,7 +845,7 @@ button.accordion  {
 }
 
 .highlight-4 {
-    background-image: linear-gradient(to right, transparent 50%, rgba(255, 0, 149, 0.2) 50%);
+    background-image: linear-gradient(to right, transparent 50%, var(--lime) 50%);
     background-size: 200%;
     transition: background-position 0.2s;
 }
